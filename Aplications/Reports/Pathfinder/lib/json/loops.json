@@ -1,0 +1,198 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Bottleneck", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: dynproc_kernel"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+            , "line":17
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Fully unrolled loop"
+          , "data":
+          ["n/a", "n/a", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                , "line":29
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Unrolled by #pragma unroll"
+            }
+            , {
+              "type":"text"
+              , "text":"Unrolled by #pragma unroll"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"dynproc_kernel.B1"
+          , "data":
+          ["Yes", "~1", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                , "line":40
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Loop orchestration compiler optimization is enabled."
+            }
+            , {
+              "type":"brief"
+              , "text":"II is an approximation."
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                      , "line":"66"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                      , "line":"72"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                      , "line":"97"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"Fully unrolled loop"
+              , "data":
+              ["n/a", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                    , "line":46
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"Fully unrolled loop"
+              , "data":
+              ["n/a", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/pathfinder/pathfinder_kernel_v5.cl"
+                    , "line":52
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

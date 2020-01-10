@@ -1,0 +1,260 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Bottleneck", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: apply_watermark"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+            , "line":59
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"apply_watermark.B2"
+          , "data":
+          ["Yes", "~1", "Fmax"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                , "line":92
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Compiler lowered Fmax (system clock frequency) due to data dependency on variable(s):"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"x (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                      , "line":"89"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"The critical path that caused lower Fmax:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Number of nodes in critical path exceeded what the compiler has captured. Only the top 5 failing nodes are listed."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"0.26 clock cycles 32-bit Integer Compare Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                          , "line":"108"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"0.26 clock cycles 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                          , "line":"92"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"0.26 clock cycles 32-bit Integer Subtract Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                          , "line":"108"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"0.11 clock cycles 32-bit Select Operation (%L, %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                          , "line":"89"
+                        }
+                        , {
+                          "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                          , "line":"92"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"0.11 clock cycles 32-bit Select Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                          , "line":"108"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Loop orchestration compiler optimization is enabled."
+            }
+            , {
+              "type":"brief"
+              , "text":"Data dependency"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"https://www.altera.com/documentation/mwh1391807516407.html#wfa1476380079940"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"Fully unrolled loop"
+              , "data":
+              ["n/a", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                    , "line":99
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"Fully unrolled loop"
+              , "data":
+              ["n/a", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                    , "line":114
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"Fully unrolled loop"
+              , "data":
+              ["n/a", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/watermarking_off.cl"
+                    , "line":131
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Unrolled by #pragma unroll"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

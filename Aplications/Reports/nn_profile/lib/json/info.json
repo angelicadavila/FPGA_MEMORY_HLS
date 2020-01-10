@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["nn"]},
+{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
+{"name":"AOC Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["aoc -profile=all -fpc -fp-relaxed nn.cl -o nn_profile.aocx"]},
+{"name":"Reports Generated At","data":["Wed Jun 19 10:43:27 2019"]}
+]}

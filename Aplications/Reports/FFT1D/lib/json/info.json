@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["fft1d"]},
+{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
+{"name":"AOC Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["aoc fft1d.cl -fpc -no-interleaving=default -board-package=/opt/IntelFPGA/18.1/hld/board/s10_ref -o fft1d_no.aocx"]},
+{"name":"Reports Generated At","data":["Thu Apr 25 12:47:28 2019"]}
+]}

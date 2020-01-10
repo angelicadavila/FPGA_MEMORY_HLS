@@ -1,0 +1,170 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units", "HyperFlex Control Optimizations"]
+    , "children":
+    [
+      {
+        "name":"fetch"
+        , "data":
+        [
+          "NDRange"
+          , "No"
+          , [512, 1, 1]
+          , 1
+          , "Off"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Kernel type: NDRange"
+          }
+          , {
+            "type":"text"
+            , "text":"Required workgroup size: (512, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 512"
+          }
+          , {
+            "type":"text"
+            , "text":"Stall latency disabled due to instruction llvm.fpga.wg.limiter.enter Operation which does not support stall latency."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/exm_opencl_fft1d_x64_linux/fft1d/device/fft1d.cl"
+              , "line":143
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"fft1d"
+        , "data":
+        [
+          "Single work-item"
+          , "No"
+          , [1, 1, 1]
+          , 1
+          , "Off"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Kernel type: Single work-item"
+          }
+          , {
+            "type":"text"
+            , "text":"Required workgroup size: (1, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 1"
+          }
+          , {
+            "type":"text"
+            , "text":"Stall latency disabled due to instruction in Kernel fetch"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/exm_opencl_fft1d_x64_linux/fft1d/device/fft1d.cl"
+              , "line":186
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"fetch"
+        , "data":
+        [3709.98, 8325.24, 434, 0, 42]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/exm_opencl_fft1d_x64_linux/fft1d/device/fft1d.cl"
+              , "line":143
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"fft1d"
+        , "data":
+        [16013, 36023, 118, 312, 49]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/exm_opencl_fft1d_x64_linux/fft1d/device/fft1d.cl"
+              , "line":186
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Kernel Subtotal"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [19722, 44348, 552, 312, 91]
+      }
+      , {
+        "name":"Global Interconnect"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [2338, 4125, 0, 0, 0]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [13132, 20030, 112, 0, 0]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [35770, 71054, 682, 312, 91]
+        , "data_percent":
+        [1.93032, 1.91394, 5.87475, 5.41667, 3.73067]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [1853108, 3712450, 11609, 5760, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+    ]
+  }
+}

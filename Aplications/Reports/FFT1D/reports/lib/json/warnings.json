@@ -1,0 +1,6 @@
+{"rows":[
+{"name":"unknown attribute 'task' ignored"
+,"debug":[[{"filename":"/home/angelica/Documents/exm_GX/exm_opencl_fft1d_x64_linux/fft1d/device/fft1d.cl"
+,"line":185}]]
+,"details":["/home/angelica/Documents/exm_GX/exm_opencl_fft1d_x64_linux/fft1d/device/fft1d.cl:185:14: warning: unknown attribute 'task' ignored"]}
+]}

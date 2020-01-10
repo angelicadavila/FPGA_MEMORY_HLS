@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["hotspot_kernel_v5"]},
+{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
+{"name":"AOC Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["aoc hotspot_kernel_v5.cl -fpc -board-package=/opt/IntelFPGA/18.1/hld/board/s10_ref -o hotspot_kernel_v5_no.aocx"]},
+{"name":"Reports Generated At","data":["Mon May  6 12:17:22 2019"]}
+]}

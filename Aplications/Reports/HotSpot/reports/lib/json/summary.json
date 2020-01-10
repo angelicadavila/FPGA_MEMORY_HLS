@@ -1,0 +1,171 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units", "HyperFlex Control Optimizations"]
+    , "children":
+    [
+      {
+        "name":"hotspot"
+        , "data":
+        [
+          "Single work-item"
+          , "No"
+          , [1, 1, 1]
+          , 1
+          , "Off"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Kernel type: Single work-item"
+          }
+          , {
+            "type":"text"
+            , "text":"Max global work dimension: 0"
+          }
+          , {
+            "type":"text"
+            , "text":"Required workgroup size: (1, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 1"
+          }
+          , {
+            "type":"text"
+            , "text":"Stall latency disabled due to instruction Load Operation which does not support stall latency."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/hotspot/hotspot_kernel_v5.cl"
+              , "line":15
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"hotspot"
+        , "data":
+        [11490, 58382, 75, 73.5, 67]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/hotspot/hotspot_kernel_v5.cl"
+              , "line":15
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Global Interconnect"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [4121, 5284, 0, 0, 0]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [13132, 20030, 112, 0, 0]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [28745, 83767, 189, 73, 67]
+        , "data_percent":
+        [1.55118, 2.25638, 1.62805, 1.28472, 3.78811]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [1853108, 3712450, 11609, 5760, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+      {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/hotspot/hotspot_kernel_v5.cl"
+              , "line":71
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/hotspot/hotspot_kernel_v5.cl"
+              , "line":77
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Store uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/hotspot/hotspot_kernel_v5.cl"
+              , "line":134
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

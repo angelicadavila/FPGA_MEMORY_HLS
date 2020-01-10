@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["pathfinder_kernel_v5"]},
+{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
+{"name":"AOC Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["aoc  pathfinder_kernel_v5.cl -profile -fpc -board-package=/opt/IntelFPGA/18.1/hld/board/s10_ref -o /mnt/extra/Angelica/exm_binary/pathfinder_kernel_v5_profile_no.aocx"]},
+{"name":"Reports Generated At","data":["Mon May 20 21:44:55 2019"]}
+]}
