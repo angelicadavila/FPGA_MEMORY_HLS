@@ -1,6 +1,6 @@
 # Analytical Model of Memory-Bound Applications Compiled with High Level Synthesis
 
-This repository includes the data collected from profile and the Jupyter notebooks with the memory model equations proposed, and the application where the model was applied. 
+This repository includes the data collected from profile and the Jupyter notebooks with the memory model equations proposed, and thier application in selected benchmarks. 
 
 
 ### Prerequisites
