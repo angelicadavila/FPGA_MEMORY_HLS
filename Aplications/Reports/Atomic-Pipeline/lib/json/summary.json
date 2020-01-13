@@ -1,0 +1,114 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units", "HyperFlex Control Optimizations"]
+    , "children":
+    [
+      {
+        "name":"test_atomic"
+        , "data":
+        [
+          "NDRange"
+          , "No"
+          , [2048, 1, 1]
+          , 1
+          , "Off"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Kernel type: NDRange"
+          }
+          , {
+            "type":"text"
+            , "text":"Required workgroup size: (2048, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 2048"
+          }
+          , {
+            "type":"text"
+            , "text":"The kernel does not use any work-group information (such as get_local_id() or get_group_id()).Local work-group size will be automatically modified to match global work-group size on launch.This is a hardware optimization."
+          }
+          , {
+            "type":"text"
+            , "text":"Stall latency disabled due to instruction atomic_add Operation which does not support stall latency."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+              , "line":9
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"test_atomic"
+        , "data":
+        [13211, 26412, 130, 0, 325]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+              , "line":9
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Global Interconnect"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [5904, 6443, 0, 0, 0]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [13132, 20030, 112, 0, 0]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [32249, 52956, 244, 0, 325]
+        , "data_percent":
+        [1.74027, 1.42644, 2.10182, 0, 3.03439]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [1853108, 3712450, 11609, 5760, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+    ]
+  }
+}

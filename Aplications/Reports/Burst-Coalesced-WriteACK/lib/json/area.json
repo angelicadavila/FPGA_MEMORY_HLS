@@ -1,0 +1,304 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [12.5329, 4.40309, 8.02322, 15.7981, 1.11111]
+  , "total":
+  [80574, 297858, 1834, 64, 51]
+  , "name":"Kernel System"
+  , "max_resources":
+  [1853108, 3712450, 11609, 5760, 92655]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [13132, 20030, 112, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [10650, 55735, 18, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 80 global loads and 16 global stores. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 80 global loads and 16 global stores."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#hnj1476724450050"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [2, 71, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes.  The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"test_random_access"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [9.20524, 3.11962, 5.98047, 14.661, 1.11111]
+      , "total_kernel_resources":
+      [56790, 222022, 1702, 64, 51]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Achieved kernel vectorization: 16"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nAchieved kernel vectorization: 16"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1463, 1467, 0, 0, 6]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"test_random_access.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [1826, 10731, 218, 0, 30]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1826, 10731, 218, 0, 30]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [4350, 7799, 173, 0, 15]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"test_bw9.cl:41"
+                  , "type":"resource"
+                  , "data":
+                  [1416, 177, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/mnt/extra/Angelica/exm_binary/test_access_ext/test_bw9/test_bw9.cl"
+                        , "line":41
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"On-chip Read-Only Memory Lookup"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [1416, 177, 0, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Read from 4096 bit ROM. "
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Read from 4096 bit ROM. A copy of the ROM is created for each access."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_bw9.cl:54"
+                  , "type":"resource"
+                  , "data":
+                  [47735, 201848, 1311, 64, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/mnt/extra/Angelica/exm_binary/test_access_ext/test_bw9/test_bw9.cl"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Dot Product of Size 4"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [2560, 5120, 0, 64, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":80
+                      , "data":
+                      [38800, 161360, 1040, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [6375, 35368, 271, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced write-ack LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced write-ack LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

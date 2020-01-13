@@ -1,0 +1,512 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [3.32973, 2.09103, 1.42644, 2.10182, 0]
+  , "total":
+  [32249, 52956, 244, 0, 325]
+  , "name":"Kernel System"
+  , "max_resources":
+  [1853108, 3712450, 11609, 5760, 92655]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [13132, 20030, 112, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [5904, 6443, 0, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 5 global loads and 0 global stores. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 5 global loads and 0 global stores."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#hnj1476724450050"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [2, 71, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes.  The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"test_atomic"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [1.6782, 1.06367, 0.711444, 1.11982, 0]
+      , "total_kernel_resources":
+      [13211, 26412, 130, 0, 325]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Achieved kernel vectorization: 16"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nAchieved kernel vectorization: 16"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Function overhead"
+          , "type":"resource"
+          , "data":
+          [1463, 1467, 0, 0, 6]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Kernel dispatch logic."
+            }
+            , {
+              "type":"brief"
+              , "text":"Kernel dispatch logic."
+            }
+          ]
+        }
+        , {
+          "name":"test_atomic.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [3000, 3387, 65, 0, 20]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3000, 3387, 65, 0, 20]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [3807, 6568, 0, 0, 299]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"test_atomic.cl:45"
+                  , "type":"resource"
+                  , "data":
+                  [684, 2470, 13, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":45
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [684, 2470, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:45"
+                  , "type":"resource"
+                  , "data":
+                  [305, 528, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":45
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"atomic_add"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [305, 528, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:46"
+                  , "type":"resource"
+                  , "data":
+                  [684, 2470, 13, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":46
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [684, 2470, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:46"
+                  , "type":"resource"
+                  , "data":
+                  [304, 528, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":46
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"atomic_add"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [304, 528, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:47"
+                  , "type":"resource"
+                  , "data":
+                  [684, 2470, 13, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":47
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [684, 2470, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:47"
+                  , "type":"resource"
+                  , "data":
+                  [304, 528, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":47
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"atomic_add"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [304, 528, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:48"
+                  , "type":"resource"
+                  , "data":
+                  [684, 2470, 13, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":48
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [684, 2470, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:48"
+                  , "type":"resource"
+                  , "data":
+                  [304, 528, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":48
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"atomic_add"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [304, 528, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:49"
+                  , "type":"resource"
+                  , "data":
+                  [684, 2470, 13, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":49
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [684, 2470, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"test_atomic.cl:49"
+                  , "type":"resource"
+                  , "data":
+                  [304, 528, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_atomic/test_atomic.cl"
+                        , "line":49
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"atomic_add"
+                      , "type":"resource"
+                      , "count":16
+                      , "data":
+                      [304, 528, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

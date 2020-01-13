@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["test_bw9"]},
+{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
+{"name":"AOC Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["aoc -D INPUTS=5 -D V=16 -board-package=/opt/IntelFPGA/18.1/hld/board/s10_ref -profile=all -report -v -fp-relaxed test_bw9.cl -o test_bw9_16_5.aocx"]},
+{"name":"Reports Generated At","data":["Tue Aug 20 04:59:10 2019"]}
+]}

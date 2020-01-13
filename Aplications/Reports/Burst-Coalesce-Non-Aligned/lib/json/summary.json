@@ -1,0 +1,171 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units", "HyperFlex Control Optimizations"]
+    , "children":
+    [
+      {
+        "name":"test_burstnonaligned_access_stream"
+        , "data":
+        [
+          "NDRange"
+          , "No"
+          , [8192, 1, 1]
+          , 1
+          , "Off"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Kernel type: NDRange"
+          }
+          , {
+            "type":"text"
+            , "text":"Required workgroup size: (8192, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 8192"
+          }
+          , {
+            "type":"text"
+            , "text":"The kernel does not use any work-group information (such as get_local_id() or get_group_id()).Local work-group size will be automatically modified to match global work-group size on launch.This is a hardware optimization."
+          }
+          , {
+            "type":"text"
+            , "text":"Stall latency disabled due to instruction Load Operation which does not support stall latency."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_bw72/test_bw72.cl"
+              , "line":8
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"test_burstnonaligned_access_stream"
+        , "data":
+        [24475, 238711, 438, 24, 142]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_bw72/test_bw72.cl"
+              , "line":8
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Global Interconnect"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [5835, 19699, 18, 0, 0]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [13132, 20030, 112, 0, 0]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [43444, 278511, 570, 24, 142]
+        , "data_percent":
+        [2.34439, 7.50208, 4.90998, 0.416667, 10.2263]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [1853108, 3712450, 11609, 5760, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+      {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_bw72/test_bw72.cl"
+              , "line":67
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_bw72/test_bw72.cl"
+              , "line":59
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Store uses a Burst-coalesced write-ack non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/export/data/users/angelicadg/exm_grendel_GX/test_access/test_bw72/test_bw72.cl"
+              , "line":71
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

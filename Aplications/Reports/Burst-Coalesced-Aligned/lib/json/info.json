@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"name":"Project Name","data":["test_bw10"]},
+{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
+{"name":"AOC Version","data":["18.1.0 Build 222"]},
+{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
+{"name":"Command","data":["aoc -D INPUTS=3 -D V=8 -profile=all -report -v -fp-relaxed test_bw10.cl -o test_bw10_8_3.aocx"]},
+{"name":"Reports Generated At","data":["Thu Jun 13 23:56:08 2019"]}
+]}
