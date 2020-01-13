@@ -4,13 +4,13 @@
   "name":"Quartus Fit Clock Summary"
   ,"columns":["", "Kernel fmax"]  ,"children":[
   {
-    "name":"Frequency (MHz)","data":["Kernel fmax": 387.5]
+    "name":"Frequency (MHz)","data":["Kernel fmax": 341.666666667]
   }
 ]}
 ,"quartusFitResourceUsageSummary":
 {
   "name":"Quartus Fit Resource Utilization Summary"
   ,"columns":["", "ALMs", "FFs", "RAMs", "DSPs", "MLABs"]  ,"children":[
-  {"name":"nw_kernel1","data":["ALMs": 20798.3 ,"FFs": 51432 ,"RAMs": 186 ,"DSPs": 2 ,"MLABs": 97]
+  {"name":"nw_kernel1","data":["ALMs": 9738.2 ,"FFs": 18939 ,"RAMs": 59 ,"DSPs": 4 ,"MLABs": 66]
   }
 ]}}

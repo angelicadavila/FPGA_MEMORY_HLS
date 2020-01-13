@@ -10,9 +10,9 @@
         "name":"nw_kernel1"
         , "data":
         [
-          "NDRange"
+          "Single work-item"
           , "No"
-          , "n/a"
+          , [1, 1, 1]
           , 1
           , "Off"
         ]
@@ -20,23 +20,31 @@
         [
           {
             "type":"text"
-            , "text":"Kernel type: NDRange"
+            , "text":"Kernel type: Single work-item"
           }
           , {
             "type":"text"
-            , "text":"The kernel does not use any work-group information (such as get_local_id() or get_group_id()).Local work-group size will be automatically modified to match global work-group size on launch.This is a hardware optimization."
+            , "text":"Max global work dimension: 0"
           }
           , {
             "type":"text"
-            , "text":"Stall latency disabled due to loop orchestration compiler optimization is disabled in loop nw_kernel1.B2."
+            , "text":"Required workgroup size: (1, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 1"
+          }
+          , {
+            "type":"text"
+            , "text":"Stall latency disabled due to instruction Load Operation which does not support stall latency."
           }
         ]
         , "debug":
         [
           [
             {
-              "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-              , "line":19
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+              , "line":4
             }
           ]
         ]
@@ -53,13 +61,13 @@
       {
         "name":"nw_kernel1"
         , "data":
-        [17263, 161944, 141, 1.5, 109]
+        [8139, 42940, 65, 3, 31]
         , "debug":
         [
           [
             {
-              "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-              , "line":19
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+              , "line":4
             }
           ]
         ]
@@ -69,7 +77,7 @@
         , "classes":
         ["summary-highlight", "nohover"]
         , "data":
-        [935, 3912, 18, 0, 0]
+        [5904, 6443, 0, 0, 0]
       }
       , {
         "name":"Board Interface"
@@ -83,9 +91,9 @@
         , "classes":
         ["summary-highlight", "nohover"]
         , "data":
-        [31332, 185957, 273, 1, 109]
+        [27177, 69484, 179, 3, 31]
         , "data_percent":
-        [1.69078, 5.00901, 2.35162, 0.0347222, 6.93355]
+        [1.46656, 1.87165, 1.54191, 0.0520833, 3.29366]
       }
       , {
         "name":"Available"
@@ -114,8 +122,8 @@
         [
           [
             {
-              "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-              , "line":36
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+              , "line":144
             }
           ]
         ]
@@ -133,14 +141,14 @@
         [
           [
             {
-              "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-              , "line":49
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+              , "line":161
             }
           ]
         ]
       }
       , {
-        "name":"Store uses a Burst-coalesced non-aligned LSU"
+        "name":"Store uses a Burst-coalesced write-ack non-aligned LSU"
         , "details":
         [
           {
@@ -152,8 +160,8 @@
         [
           [
             {
-              "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-              , "line":55
+              "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+              , "line":195
             }
           ]
         ]

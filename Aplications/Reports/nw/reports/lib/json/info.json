@@ -1,8 +1,0 @@
-{"name":"Info","rows":[
-{"classes":["info-table"],"name":"Project Name","data":["nw"]},
-{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
-{"name":"AOC Version","data":["18.1.0 Build 222"]},
-{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
-{"name":"Command","data":["aoc nw.cl"]},
-{"name":"Reports Generated At","data":["Fri Feb  8 00:26:11 2019"]}
-]}

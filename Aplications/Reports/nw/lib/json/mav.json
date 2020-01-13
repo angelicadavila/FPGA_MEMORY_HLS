@@ -11,6 +11,18 @@
           "type":"bb"
           , "id":3
           , "name":"nw_kernel1.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"nw_kernel1.B1"
           , "children":
           [
             {
@@ -21,8 +33,8 @@
               [
                 [
                   {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":36
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                    , "line":131
                   }
                 ]
               ]
@@ -30,11 +42,11 @@
               [
                 {
                   "type":"table"
-                  , "Width":"512 bits"
-                  , "Type":"Burst-coalesced non-aligned"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
                   , "Stall-free":"No"
-                  , "Start Cycle":"13"
-                  , "Latency":"251"
+                  , "Start Cycle":"23"
+                  , "Latency":"185"
                   , "Reference":
                   [
                     {
@@ -60,8 +72,8 @@
               [
                 [
                   {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":36
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                    , "line":144
                   }
                 ]
               ]
@@ -69,11 +81,11 @@
               [
                 {
                   "type":"table"
-                  , "Width":"32 bits"
-                  , "Type":"Burst-coalesced"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced non-aligned"
                   , "Stall-free":"No"
-                  , "Start Cycle":"13"
-                  , "Latency":"190"
+                  , "Start Cycle":"23"
+                  , "Latency":"224"
                   , "Reference":
                   [
                     {
@@ -93,67 +105,14 @@
             }
             , {
               "type":"inst"
-              , "id":12
-              , "name":"begin"
-              , "details":
-              [
-                {
-                  "type":"table"
-                  , "Start Cycle":"0"
-                  , "Latency":"1"
-                }
-              ]
-            }
-            , {
-              "type":"inst"
-              , "id":13
-              , "name":"end"
-              , "details":
-              [
-                {
-                  "type":"table"
-                  , "Start Cycle":"271"
-                  , "Latency":"1"
-                }
-              ]
-            }
-          ]
-          , "details":
-          [
-            {
-              "type":"table"
-              , "Latency":"271"
-            }
-          ]
-        }
-        , {
-          "type":"bb"
-          , "id":4
-          , "name":"nw_kernel1.B1"
-          , "details":
-          [
-            {
-              "type":"table"
-              , "Latency":"0"
-            }
-          ]
-        }
-        , {
-          "type":"bb"
-          , "id":5
-          , "name":"nw_kernel1.B2"
-          , "children":
-          [
-            {
-              "type":"inst"
               , "id":8
               , "name":"Load"
               , "debug":
               [
                 [
                   {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":40
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                    , "line":161
                   }
                 ]
               ]
@@ -161,11 +120,11 @@
               [
                 {
                   "type":"table"
-                  , "Width":"32 bits"
-                  , "Type":"Burst-coalesced"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced non-aligned"
                   , "Stall-free":"No"
-                  , "Start Cycle":"21"
-                  , "Latency":"190"
+                  , "Start Cycle":"23"
+                  , "Latency":"224"
                   , "Reference":
                   [
                     {
@@ -186,13 +145,13 @@
             , {
               "type":"inst"
               , "id":9
-              , "name":"Load"
+              , "name":"Store"
               , "debug":
               [
                 [
                   {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":41
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                    , "line":195
                   }
                 ]
               ]
@@ -200,11 +159,11 @@
               [
                 {
                   "type":"table"
-                  , "Width":"32 bits"
-                  , "Type":"Burst-coalesced"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced write-ack non-aligned"
                   , "Stall-free":"No"
-                  , "Start Cycle":"21"
-                  , "Latency":"190"
+                  , "Start Cycle":"267"
+                  , "Latency":"63"
                   , "Reference":
                   [
                     {
@@ -225,91 +184,13 @@
             , {
               "type":"inst"
               , "id":10
-              , "name":"Load"
-              , "debug":
-              [
-                [
-                  {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":49
-                  }
-                ]
-              ]
-              , "details":
-              [
-                {
-                  "type":"table"
-                  , "Width":"512 bits"
-                  , "Type":"Burst-coalesced non-aligned"
-                  , "Stall-free":"No"
-                  , "Start Cycle":"21"
-                  , "Latency":"251"
-                  , "Reference":
-                  [
-                    {
-                      "type":"text"
-                      , "text":"See %L for more information"
-                      , "links":
-                      [
-                        {
-                          "guide":"Best Practices Guide : Load-Store Units"
-                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-            , {
-              "type":"inst"
-              , "id":11
-              , "name":"Store"
-              , "debug":
-              [
-                [
-                  {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":55
-                  }
-                ]
-              ]
-              , "details":
-              [
-                {
-                  "type":"table"
-                  , "Width":"512 bits"
-                  , "Type":"Burst-coalesced non-aligned"
-                  , "Stall-free":"No"
-                  , "Start Cycle":"359"
-                  , "Latency":"2"
-                  , "Reference":
-                  [
-                    {
-                      "type":"text"
-                      , "text":"See %L for more information"
-                      , "links":
-                      [
-                        {
-                          "guide":"Best Practices Guide : Load-Store Units"
-                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-            , {
-              "type":"inst"
-              , "id":14
               , "name":"loop"
               , "debug":
               [
                 [
                   {
-                    "filename":"/home/angelica/Documents/exm_GX/kernels_altera/nw.cl"
-                    , "line":39
+                    "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                    , "line":74
                   }
                 ]
               ]
@@ -319,19 +200,19 @@
                   "type":"table"
                   , "Start Cycle":"0"
                   , "Latency":"1"
-                  , "Loops To":"15"
+                  , "Loops To":"11"
                 }
               ]
             }
             , {
               "type":"inst"
-              , "id":15
+              , "id":11
               , "name":"loop end"
               , "details":
               [
                 {
                   "type":"table"
-                  , "Start Cycle":"361"
+                  , "Start Cycle":"330"
                   , "Latency":"1"
                 }
               ]
@@ -341,12 +222,24 @@
           [
             {
               "type":"table"
-              , "Latency":"361"
-              , "II":"0"
+              , "Latency":"330"
+              , "II":"1"
               , "Subloops":"No"
-              , "Pipelined":"No"
-              , "Fmax Bottlenecks":"No"
-              , "Loop Info":"Loop is not pipelined. See Loops Analysis for more information."
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"Yes"
+              , "Loop Info":"Loop sacrificed fmax to achieve II of 1. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":5
+          , "name":"nw_kernel1.B2"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
             }
           ]
         }
@@ -360,7 +253,7 @@
       [
         {
           "type":"memsys"
-          , "id":16
+          , "id":12
           , "name":"DDR"
           , "details":
           [
@@ -376,60 +269,20 @@
   , "links":
   [
     {
+      "from":11
+      , "to":10
+    }
+    , {
+      "from":3
+      , "to":10
+    }
+    , {
       "from":6
-      , "to":13
+      , "to":11
     }
     , {
       "from":7
-      , "to":13
-    }
-    , {
-      "from":15
-      , "to":4
-    }
-    , {
-      "from":15
-      , "to":14
-    }
-    , {
-      "from":13
-      , "to":14
-    }
-    , {
-      "from":8
-      , "to":15
-    }
-    , {
-      "from":9
-      , "to":15
-    }
-    , {
-      "from":10
-      , "to":15
-    }
-    , {
-      "from":11
-      , "to":15
-    }
-    , {
-      "from":12
-      , "to":6
-    }
-    , {
-      "from":12
-      , "to":7
-    }
-    , {
-      "from":14
-      , "to":8
-    }
-    , {
-      "from":14
-      , "to":9
-    }
-    , {
-      "from":14
-      , "to":10
+      , "to":11
     }
     , {
       "from":8
@@ -440,32 +293,48 @@
       , "to":11
     }
     , {
-      "from":10
-      , "to":11
-    }
-    , {
-      "from":16
-      , "to":10
-    }
-    , {
       "from":11
-      , "to":16
+      , "to":5
     }
     , {
-      "from":16
-      , "to":8
-    }
-    , {
-      "from":16
+      "from":10
       , "to":6
     }
     , {
-      "from":16
+      "from":10
       , "to":7
     }
     , {
-      "from":16
+      "from":10
+      , "to":8
+    }
+    , {
+      "from":6
       , "to":9
+    }
+    , {
+      "from":7
+      , "to":9
+    }
+    , {
+      "from":8
+      , "to":9
+    }
+    , {
+      "from":9
+      , "to":12
+    }
+    , {
+      "from":12
+      , "to":8
+    }
+    , {
+      "from":12
+      , "to":6
+    }
+    , {
+      "from":12
+      , "to":7
     }
   ]
 }

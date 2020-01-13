@@ -1,0 +1,2425 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [3.32183, 1.50002, 1.87165, 1.54191, 0.0520833]
+  , "total":
+  [27177, 69484, 179, 3, 31]
+  , "name":"Kernel System"
+  , "max_resources":
+  [1853108, 3712450, 11609, 5760, 92655]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [13132, 20030, 112, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [5904, 6443, 0, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 3 global loads and 1 global store. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 3 global loads and 1 global store."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#hnj1476724450050"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [2, 71, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes.  The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"nw_kernel1"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [1.6703, 0.472665, 1.15665, 0.55991, 0.0520833]
+      , "total_kernel_resources":
+      [8139, 42940, 65, 3, 31]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Max global work dimension: 0"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nMax global work dimension: 0"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Coalesced Private Variables: \n - 'last_chunk_col_SR' (nw_kernel_v5.cl:13)\n - 'ref_SR' (nw_kernel_v5.cl:14)\n - 'data_h_SR' (nw_kernel_v5.cl:15)\n - 'write_SR' (nw_kernel_v5.cl:16)"
+          , "type":"resource"
+          , "data":
+          [8, 10, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":13
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":14
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":15
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":16
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 5"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 5 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'last_chunk_col_SR' (nw_kernel_v5.cl:13)\n - 'write_SR' (nw_kernel_v5.cl:16)\n - 'out' (nw_kernel_v5.cl:175)"
+          , "type":"resource"
+          , "data":
+          [8, 64, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":13
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":16
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":175
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'out_SR' (nw_kernel_v5.cl:12)\n - 'write_SR' (nw_kernel_v5.cl:16)\n - 'out' (nw_kernel_v5.cl:175)"
+          , "type":"resource"
+          , "data":
+          [24, 192, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":12
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":16
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":175
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"3 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n3 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'top' (nw_kernel_v5.cl:164)\n - 'left' (nw_kernel_v5.cl:166)\n - 'out_SR' (nw_kernel_v5.cl:12)"
+          , "type":"resource"
+          , "data":
+          [24, 64, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":12
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":164
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":166
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'top' (nw_kernel_v5.cl:164)\n - 'left' (nw_kernel_v5.cl:166)\n - 'out_SR' (nw_kernel_v5.cl:12)\n - 'write_SR' (nw_kernel_v5.cl:16)"
+          , "type":"resource"
+          , "data":
+          [48, 128, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":12
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":16
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":164
+              }
+            ]
+            , [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":166
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"2 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n2 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'block_row' (nw_kernel_v5.cl:70)"
+          , "type":"resource"
+          , "data":
+          [10, 8, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":70
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 4"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 4 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'comp_col_offset' (nw_kernel_v5.cl:68)"
+          , "type":"resource"
+          , "data":
+          [8, 64, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":68
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'data_h_SR' (nw_kernel_v5.cl:15)"
+          , "type":"resource"
+          , "data":
+          [138, 358, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":15
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (5 or fewer tap points)"
+            }
+            , {
+              "type":"text"
+              , "text":"5 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n5 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'input_v_SR' (nw_kernel_v5.cl:17)"
+          , "type":"resource"
+          , "data":
+          [8, 64, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":17
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'last_chunk_col_SR' (nw_kernel_v5.cl:13)"
+          , "type":"resource"
+          , "data":
+          [19, 416, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":13
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (1 or fewer tap point)"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'loop_index' (nw_kernel_v5.cl:71)"
+          , "type":"resource"
+          , "data":
+          [8, 66, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":71
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 33"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 33 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'ref_SR' (nw_kernel_v5.cl:14)"
+          , "type":"resource"
+          , "data":
+          [82, 632, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":14
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (5 or fewer tap points)"
+            }
+            , {
+              "type":"text"
+              , "text":"5 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n5 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'write_SR' (nw_kernel_v5.cl:16)"
+          , "type":"resource"
+          , "data":
+          [40, 55, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":16
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (1 or fewer tap point)"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'write_col_offset' (nw_kernel_v5.cl:69)"
+          , "type":"resource"
+          , "data":
+          [8, 64, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                , "line":69
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"nw_kernel1.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [0, 99, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [0, 33, 0, 0, 0]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:129"
+                  , "type":"resource"
+                  , "data":
+                  [0, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":129
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:74"
+                  , "type":"resource"
+                  , "data":
+                  [0, 34, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":74
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [7, 2, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"nw_kernel_v5.cl:4"
+                  , "type":"resource"
+                  , "data":
+                  [7, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":4
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [20, 29, 0, 0, 1]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"nw_kernel_v5.cl:74"
+                  , "type":"resource"
+                  , "data":
+                  [76, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":74
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:129"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":129
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"nw_kernel1.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [295, 2554, 3, 0, 6]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [295, 2554, 3, 0, 6]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [524, 265, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"nw_kernel_v5.cl:108"
+                  , "type":"resource"
+                  , "data":
+                  [128, 96, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":108
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:117"
+                  , "type":"resource"
+                  , "data":
+                  [16, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":117
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:126"
+                  , "type":"resource"
+                  , "data":
+                  [5.33333, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":126
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:15"
+                  , "type":"resource"
+                  , "data":
+                  [81, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":15
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:17"
+                  , "type":"resource"
+                  , "data":
+                  [16, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":17
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:199"
+                  , "type":"resource"
+                  , "data":
+                  [5.33333, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":199
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:68"
+                  , "type":"resource"
+                  , "data":
+                  [16, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":68
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:69"
+                  , "type":"resource"
+                  , "data":
+                  [16, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":69
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:70"
+                  , "type":"resource"
+                  , "data":
+                  [5.33333, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:74"
+                  , "type":"resource"
+                  , "data":
+                  [16, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":74
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:85"
+                  , "type":"resource"
+                  , "data":
+                  [112, 64, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":85
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:91"
+                  , "type":"resource"
+                  , "data":
+                  [59, 64, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:99"
+                  , "type":"resource"
+                  , "data":
+                  [48, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":99
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [291, 528, 0, 0, 24]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [490, 8, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [280, 8, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [208, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:15"
+                  , "type":"resource"
+                  , "data":
+                  [41.25, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":15
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [27, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"5-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.25, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:17"
+                  , "type":"resource"
+                  , "data":
+                  [13, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":17
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:70"
+                  , "type":"resource"
+                  , "data":
+                  [2.75, 0.25, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":70
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.75, 0.25, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:74"
+                  , "type":"resource"
+                  , "data":
+                  [39, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":74
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [2.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [3.5, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:91"
+                  , "type":"resource"
+                  , "data":
+                  [1.25, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":91
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"5-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.25, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:99"
+                  , "type":"resource"
+                  , "data":
+                  [3.25, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":99
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"5-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [3.25, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:108"
+                  , "type":"resource"
+                  , "data":
+                  [14.25, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":108
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"5-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.25, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:126"
+                  , "type":"resource"
+                  , "data":
+                  [2.75, 0.25, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":126
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.75, 0.25, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:127"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":127
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:129"
+                  , "type":"resource"
+                  , "data":
+                  [47, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":129
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [46, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:131"
+                  , "type":"resource"
+                  , "data":
+                  [517.5, 2050, 13, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":131
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [504, 2050, 13, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Burst-coalesced LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:134"
+                  , "type":"resource"
+                  , "data":
+                  [4.25, 0.75, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":134
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.75, 0.25, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:139"
+                  , "type":"resource"
+                  , "data":
+                  [64, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":139
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:140"
+                  , "type":"resource"
+                  , "data":
+                  [59.5, 23, 0, 0.75, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":140
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [27.5, 23, 0, 0.75, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:142"
+                  , "type":"resource"
+                  , "data":
+                  [149.5, 7.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":142
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [7.5, 3.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [2, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [140, 4, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:144"
+                  , "type":"resource"
+                  , "data":
+                  [1239, 15892, 16, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":144
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [122, 96, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1117, 15796, 16, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:152"
+                  , "type":"resource"
+                  , "data":
+                  [8, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":152
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [8, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:156"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":156
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:157"
+                  , "type":"resource"
+                  , "data":
+                  [27.5, 23, 0, 0.75, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":157
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [27.5, 23, 0, 0.75, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:159"
+                  , "type":"resource"
+                  , "data":
+                  [42, 5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":159
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [4, 4, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [35, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:161"
+                  , "type":"resource"
+                  , "data":
+                  [1226, 15892, 16, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":161
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [109, 96, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1117, 15796, 16, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:165"
+                  , "type":"resource"
+                  , "data":
+                  [32, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":165
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 32, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:166"
+                  , "type":"resource"
+                  , "data":
+                  [32, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":166
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 32, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:168"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":168
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:169"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":169
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:170"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":170
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:172"
+                  , "type":"resource"
+                  , "data":
+                  [13, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":172
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:175"
+                  , "type":"resource"
+                  , "data":
+                  [81, 3, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":175
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [3, 3, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [78, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:188"
+                  , "type":"resource"
+                  , "data":
+                  [96, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":188
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [96, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:189"
+                  , "type":"resource"
+                  , "data":
+                  [4, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":189
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:190"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":190
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:191"
+                  , "type":"resource"
+                  , "data":
+                  [87, 46, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":191
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [55, 46, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:193"
+                  , "type":"resource"
+                  , "data":
+                  [184, 8, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":193
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [8, 2, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [176, 6, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:195"
+                  , "type":"resource"
+                  , "data":
+                  [1426.5, 3242, 17, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":195
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [1.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [2, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1423, 3241, 17, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced write-ack non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced write-ack non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:199"
+                  , "type":"resource"
+                  , "data":
+                  [6.75, 0.25, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":199
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.75, 0.25, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:200"
+                  , "type":"resource"
+                  , "data":
+                  [27, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":200
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [26, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:202"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":202
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:204"
+                  , "type":"resource"
+                  , "data":
+                  [27, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":204
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [26, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"nw_kernel_v5.cl:206"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":206
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"nw_kernel1.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"nw_kernel_v5.cl:209"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"/home/angelica/Documents/exm_GX/Rodinia_zh/rodinia_fpga/opencl/nw/nw_kernel_v5.cl"
+                        , "line":209
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
