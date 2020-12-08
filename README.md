@@ -13,17 +13,23 @@ Instructions to install and execute Jupyter notebooks can be found in this link:
 
 ## Getting Started
 
-The cell of the notebooks requires to be executed following the strict sequential order for the model valuation.
+Jupyter notebooks cells require to be executed following the strict sequential order for the model valuation.
 The FPGA model folders have the reports with the necesary information for the model.
 
 The benchmarks comes from:
-*Intel FPGA SDK. 2018.
-*Cho.Vanderbauwhede, W., & Benkrid, K. (2013). High- Performance Computing Using FPGAs. Springer. 
-*Rodinia by Zohuri. Hamid Reza Zohouri, Naoya Maruyama, Aaron Smith, Motohiko Matsuda, and Satoshi Matsuoka, "Evaluating and Optimizing OpenCL Kernels for High Performance Computing with FPGAs," Proceedings of the ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC'16), Nov. 2016. 
-*FBLAS.De Matteis, T., Licht, J. D. F., & Hoefler, T. (2019). FBLAS: streaming linear algebra on FPGA. arXiv preprint arXiv:1907.07929. 
-*HiFlipVX for Intel. Davila et. al.
+* Intel FPGA SDK. 2018.
+* Cho.Vanderbauwhede, W., & Benkrid, K. (2013). High- Performance Computing Using FPGAs. Springer. 
+* Rodinia by Zohuri. Hamid Reza Zohouri, Naoya Maruyama, Aaron Smith, Motohiko Matsuda, and Satoshi Matsuoka, "Evaluating and Optimizing OpenCL Kernels for High Performance Computing with FPGAs," Proceedings of the ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC'16), Nov. 2016. 
+* FBLAS.De Matteis, T., Licht, J. D. F., & Hoefler, T. (2019). FBLAS: streaming linear algebra on FPGA. arXiv preprint arXiv:1907.07929. 
+* HiFlipVX for Intel. Davila et. al.
+
+## Background
+ Our model can accurately predict the execution time of FPGA kernels with different memory technologies as DDR4 and HBM.
+ 
+ The model is based on BSP architecture where Global Memory inteconnect can reorder all memory request from kernel.
+![BSP architecture](https://github.com/angelicadavila/FPGA_MEMORY_HLS/tree/main/images/FPGA_OpenCL_Architecture-general.png)
 
 ### More information about the model
 
-Dávila-Guzmán, M. A., Tejero, R. G., Villarroya-Gaudó, M., & Gracia, D. S. (2020, May). An Analytical Model of Memory-Bound Applications Compiled with High Level Synthesis. In 2020 IEEE 28th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM) (pp. 218-218). IEEE.
+Dávila-Guzmán, M. A., Tejero, R. G., Villarroya-Gaudó, M., & Gracia, D. S. (2020, May). [An Analytical Model of Memory-Bound Applications Compiled with High Level Synthesis](https://arxiv.org/abs/2003.13054). In 2020 IEEE 28th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM) (pp. 218-218). IEEE.
 
