@@ -27,7 +27,7 @@ The benchmarks comes from:
  Our model can accurately predict the execution time of FPGA kernels with different memory technologies as DDR4 and HBM.
  
  The model is based on BSP architecture where Global Memory inteconnect can reorder all memory request from kernel.
-![BSP architecture](https://github.com/angelicadavila/FPGA_MEMORY_HLS/tree/main/images/FPGA_OpenCL_Architecture-general.png)
+![BSP](https://github.com/angelicadavila/FPGA_MEMORY_HLS/blob/main/images/FPGA_OpenCL_Architecture-general.png)
 
 ### More information about the model
 
