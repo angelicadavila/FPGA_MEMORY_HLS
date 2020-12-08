@@ -1,0 +1,60 @@
+{
+  "nodes":
+  [
+    {
+      "name":"streaming_iamax"
+      , "id":2448288024
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"streaming_iamax.B0"
+          , "id":2448473936
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":2451942400
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"streaming_iamax.B1"
+          , "id":2448304256
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":2452626528
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":2452121120
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"streaming_iamax.B2"
+          , "id":2448304336
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":2452980528
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

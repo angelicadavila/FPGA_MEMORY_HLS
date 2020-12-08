@@ -1,0 +1,406 @@
+{
+  "430832936":
+  {
+    "nodes":
+    [
+      {
+        "name":"test_multiplereads.B0"
+        , "id":431036064
+        , "start":"0"
+        , "end":"646"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":433436800
+            , "start":"0"
+            , "end":"34"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_test_multiplereadss_c0_enter_test_multiplereads1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"34"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":433618896
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Left Shift"
+                    , "Constant Operand":"33 (0x21)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":">>"
+                , "id":435238080
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Arithmetic Right Shift"
+                    , "Constant Operand":"32 (0x20)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"z"
+                , "id":433860992
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'z'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":434877712
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"y"
+                , "id":434588528
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'y'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":433766176
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"x"
+                , "id":434891472
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'x'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":434643296
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":433696816
+                , "start":"3"
+                , "end":"34"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"3"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"256"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":440687296
+            , "start":"34"
+            , "end":"546"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"64 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"34"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":35
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":440614752
+            , "start":"34"
+            , "end":"546"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"64 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"34"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":35
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 1"
+            , "id":433712560
+            , "start":"546"
+            , "end":"582"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_entry_test_multiplereadss_c1_enter_test_multiplereads6"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"546"
+                , "Cluster Latency":"36"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Hard FP +"
+                , "id":434637584
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":434552304
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":435900912
+                , "start":"551"
+                , "end":"582"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"551"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"72"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":440790816
+            , "start":"582"
+            , "end":"646"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"64 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"582"
+                , "Latency":"64"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":35
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

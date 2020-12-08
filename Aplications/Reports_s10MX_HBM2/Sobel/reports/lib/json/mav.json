@@ -1,0 +1,85 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"exm1"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"exm1.B0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":4
+              , "name":"'ImgSobelFunc' HDL Function Call"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"ImgSobel4K_MX.cl"
+                    , "line":20
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":5
+              , "name":"'ImgSobelFunc' HDL Function Call"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"ImgSobel4K_MX.cl"
+                    , "line":20
+                  }
+                ]
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":6
+              , "name":"Begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":7
+              , "name":"End"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

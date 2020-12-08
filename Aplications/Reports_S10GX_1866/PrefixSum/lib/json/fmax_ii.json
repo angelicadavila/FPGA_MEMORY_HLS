@@ -1,0 +1,95 @@
+{
+  "basicblocks":
+  {
+    "prefixSum.B0":
+    {
+      "name":"prefixSum.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":35
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "prefixSum.B1":
+    {
+      "name":"prefixSum.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "prefixSum.B2":
+    {
+      "name":"prefixSum.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":652
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"PrefixSum.cl"
+                , "line":"14"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  , "functions":
+  {
+    "prefixSum":
+    {
+      "debug":
+      [
+        {
+          "filename":"PrefixSum.cl"
+          , "line":6
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "prefixSum__no_loop":
+        [
+          "prefixSum.B0"
+          , "prefixSum.B1"
+        ]
+        , "prefixSum.B2":
+        [
+          "prefixSum.B2"
+        ]
+      }
+    }
+  }
+}

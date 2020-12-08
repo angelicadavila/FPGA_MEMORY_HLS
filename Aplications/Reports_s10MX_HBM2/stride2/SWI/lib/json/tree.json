@@ -1,0 +1,60 @@
+{
+  "nodes":
+  [
+    {
+      "name":"test_multiplereads"
+      , "id":3991593848
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"test_multiplereads.B0"
+          , "id":3991623952
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3994507264
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"test_multiplereads.B2"
+          , "id":3991592304
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":3995446000
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"test_multiplereads.B1"
+          , "id":3991592224
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":3994700192
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":3995185072
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

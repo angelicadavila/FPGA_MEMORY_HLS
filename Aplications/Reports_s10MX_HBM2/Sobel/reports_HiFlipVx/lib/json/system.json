@@ -1,0 +1,1098 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ImgSobelFunc"
+      , "id":708258024
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"Stream Write"
+          , "id":710002312
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./graph_test/sobel.h"
+                , "line":51
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":709998104
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":159
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709992536
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"64 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":144
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":709997832
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_base_intel.h"
+                , "line":30
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709992264
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_base_intel.h"
+                , "line":24
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709992808
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"64 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":156
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709993080
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"64 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":156
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":709204344
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"192 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./graph_test/sobel.h"
+                , "line":30
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":709998424
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelFunc.B1.start"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":159
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"ImgSobelIntel"
+      , "id":708203880
+      , "type":"task"
+      , "children":
+      [
+        {
+          "name":"Stream Read"
+          , "id":708569512
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelIntel.B1.start"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_base_intel.h"
+                , "line":10
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":709727400
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelIntel.B4"
+              , "Width":"64 bits"
+              , "Depth":"256"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":1918
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709795720
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelIntel.B4"
+              , "Width":"64 bits"
+              , "Depth":"256"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":1946
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709795992
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelIntel.B4"
+              , "Width":"64 bits"
+              , "Depth":"256"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":1952
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709884872
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"ImgSobelIntel.B5"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_base_intel.h"
+                , "line":12
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"vxReadDram"
+      , "id":708208680
+      , "type":"task"
+      , "children":
+      [
+        {
+          "name":"Non-Blocking Stream Write"
+          , "id":708283336
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxReadDram.B3"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"Yes"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":41
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":708822856
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxReadDram.B5"
+              , "Width":"64 bits"
+              , "Depth":"256"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":39
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":708270472
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxReadDram.B1.start"
+              , "Width":"64 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":20
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"vxWriteDram"
+      , "id":708227112
+      , "type":"task"
+      , "children":
+      [
+        {
+          "name":"Stream Write"
+          , "id":708949848
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxWriteDram.B3"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":82
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":708862872
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxWriteDram.B1.start"
+              , "Width":"64 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":68
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":708800680
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxWriteDram.B5"
+              , "Width":"64 bits"
+              , "Depth":"256"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"vxWriteDram_1"
+      , "id":708238088
+      , "type":"task"
+      , "children":
+      [
+        {
+          "name":"Stream Read"
+          , "id":709301480
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxWriteDram_1.B5"
+              , "Width":"64 bits"
+              , "Depth":"256"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":74
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":709236984
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxWriteDram_1.B1.start"
+              , "Width":"64 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":68
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Write"
+          , "id":709255272
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"vxWriteDram_1.B3"
+              , "Width":"1 bit"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":82
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"streamY_1_2"
+      , "id":708021720
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"64 bits"
+          , "Depth":"256"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"64 bits"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"stream_r_0"
+      , "id":708023400
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"64 bits"
+          , "Depth":"256"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"64 bits"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"streamX_1_2"
+      , "id":708023800
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"64 bits"
+          , "Depth":"256"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"64 bits"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"call.vxWriteDram"
+      , "id":708024088
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"64 bits"
+          , "Depth":"0"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"64 bits"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"call.vxReadDram"
+      , "id":708205816
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"64 bits"
+          , "Depth":"0"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"64 bits"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"return.vxReadDram"
+      , "id":708205944
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"1 bit"
+          , "Depth":"0"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"1 bit"
+          , "Uses Packets":"No"
+          , "Uses Ready":"No"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"call.ImgSobelIntel"
+      , "id":708206408
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"1 bit"
+          , "Depth":"0"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"1 bit"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"return.vxWriteDram"
+      , "id":708206552
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"1 bit"
+          , "Depth":"0"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"1 bit"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"call.vxWriteDram_1"
+      , "id":708206728
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"64 bits"
+          , "Depth":"0"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"64 bits"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"return.vxWriteDram_1"
+      , "id":708206904
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"1 bit"
+          , "Depth":"0"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"1 bit"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"return.ImgSobelIntel"
+      , "id":708207752
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"1 bit"
+          , "Depth":"0"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"1 bit"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"call.ImgSobelFunc"
+      , "id":708207928
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"192 bits"
+          , "Depth":"0"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"192 bits"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"return.ImgSobelFunc"
+      , "id":708208104
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"1 bit"
+          , "Depth":"0"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"1 bit"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":709795992
+      , "to":708021720
+    }
+    , {
+      "from":708021720
+      , "to":708800680
+    }
+    , {
+      "from":708822856
+      , "to":708023400
+    }
+    , {
+      "from":708023400
+      , "to":709727400
+    }
+    , {
+      "from":709795720
+      , "to":708023800
+    }
+    , {
+      "from":708023800
+      , "to":709301480
+    }
+    , {
+      "from":709993080
+      , "to":708024088
+    }
+    , {
+      "from":708024088
+      , "to":708862872
+    }
+    , {
+      "from":709992536
+      , "to":708205816
+    }
+    , {
+      "from":708205816
+      , "to":708270472
+    }
+    , {
+      "from":708283336
+      , "to":708205944
+    }
+    , {
+      "from":709992264
+      , "to":708206408
+    }
+    , {
+      "from":708206408
+      , "to":708569512
+    }
+    , {
+      "from":708949848
+      , "to":708206552
+    }
+    , {
+      "from":708206552
+      , "to":709998424
+    }
+    , {
+      "from":709992808
+      , "to":708206728
+    }
+    , {
+      "from":708206728
+      , "to":709236984
+    }
+    , {
+      "from":709255272
+      , "to":708206904
+    }
+    , {
+      "from":708206904
+      , "to":709998104
+    }
+    , {
+      "from":709884872
+      , "to":708207752
+    }
+    , {
+      "from":708207752
+      , "to":709997832
+    }
+    , {
+      "from":708207928
+      , "to":709204344
+    }
+    , {
+      "from":710002312
+      , "to":708208104
+    }
+    , {
+      "from":709204344
+      , "to":709992264
+    }
+    , {
+      "from":709204344
+      , "to":709992536
+    }
+    , {
+      "from":709204344
+      , "to":709992808
+    }
+    , {
+      "from":709204344
+      , "to":709993080
+    }
+    , {
+      "from":709204344
+      , "to":709997832
+    }
+    , {
+      "from":709204344
+      , "to":709998104
+    }
+    , {
+      "from":709204344
+      , "to":709998424
+    }
+    , {
+      "from":709727400
+      , "to":709795720
+    }
+    , {
+      "from":709727400
+      , "to":709795992
+    }
+    , {
+      "from":709992264
+      , "to":709997832
+    }
+    , {
+      "from":709992264
+      , "to":709998104
+    }
+    , {
+      "from":709992264
+      , "to":709998424
+    }
+    , {
+      "from":709992264
+      , "to":710002312
+    }
+    , {
+      "from":709992536
+      , "to":710002312
+    }
+    , {
+      "from":709992808
+      , "to":709997832
+    }
+    , {
+      "from":709992808
+      , "to":709998104
+    }
+    , {
+      "from":709992808
+      , "to":709998424
+    }
+    , {
+      "from":709992808
+      , "to":710002312
+    }
+    , {
+      "from":709993080
+      , "to":709997832
+    }
+    , {
+      "from":709993080
+      , "to":709998104
+    }
+    , {
+      "from":709993080
+      , "to":709998424
+    }
+    , {
+      "from":709993080
+      , "to":710002312
+    }
+    , {
+      "from":709997832
+      , "to":710002312
+    }
+    , {
+      "from":709998104
+      , "to":710002312
+    }
+    , {
+      "from":709998424
+      , "to":710002312
+    }
+    , {
+      "from":708569512
+      , "to":709884872
+    }
+    , {
+      "from":709795992
+      , "to":709884872
+    }
+    , {
+      "from":709795720
+      , "to":709884872
+    }
+    , {
+      "from":708270472
+      , "to":708283336
+    }
+    , {
+      "from":708822856
+      , "to":708283336
+    }
+    , {
+      "from":708862872
+      , "to":708949848
+    }
+    , {
+      "from":708800680
+      , "to":708949848
+    }
+    , {
+      "from":709301480
+      , "to":709255272
+    }
+    , {
+      "from":709236984
+      , "to":709255272
+    }
+  ]
+}

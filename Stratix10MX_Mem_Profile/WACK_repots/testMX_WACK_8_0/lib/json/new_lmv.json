@@ -1,0 +1,495 @@
+{
+  "nodes":
+  [
+    {
+      "name":"test_random_access"
+      , "id":3129641192
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"Unknown ROM (address space 6)"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"8192 bytes"
+                  , "Implemented size":"8192 bytes"
+                  , "Number of banks":"1"
+                  , "Number of replicates":"8"
+                  , "Additional information":"ROM contents for 8 replicates were  pruned based on access pattern of the load site"
+                }
+              ]
+              , "type":"romsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":3
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"32 bits"
+                      , "Implemented size":"8192 bytes"
+                      , "Number of replicates":"8"
+                      , "Replicate ID(s) with pruned initializer":"0, 1, 2, 3, 4, 5, 6 and 7"
+                    }
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":4
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":5
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 1"
+                      , "id":6
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":7
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 2"
+                      , "id":8
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":9
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 3"
+                      , "id":10
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":11
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 4"
+                      , "id":12
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":13
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 5"
+                      , "id":14
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":15
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 6"
+                      , "id":16
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":17
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 7"
+                      , "id":18
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"256 words"
+                          , "Size":"1024 bytes"
+                          , "Additional Information":"87 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":19
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"rand"
+              , "id":20
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"test_WACK.cl"
+                          , "line":"37"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"test_WACK.cl"
+                    , "line":37
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":3129821096
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129913912
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129916104
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129918296
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129920488
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129923720
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129888168
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":3129932312
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":3129821096
+      , "to":5
+    }
+    , {
+      "from":3129913912
+      , "to":7
+    }
+    , {
+      "from":3129916104
+      , "to":9
+    }
+    , {
+      "from":3129918296
+      , "to":11
+    }
+    , {
+      "from":3129920488
+      , "to":13
+    }
+    , {
+      "from":3129923720
+      , "to":15
+    }
+    , {
+      "from":3129888168
+      , "to":17
+    }
+    , {
+      "from":3129932312
+      , "to":19
+    }
+  ]
+}

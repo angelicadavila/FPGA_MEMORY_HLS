@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"nw_kernel1"
+      , "id":3961842824
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"nw_kernel1.B1"
+          , "id":3962017040
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":3968051536
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":3967017808
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"nw_kernel1.B2"
+          , "id":3961844800
+          , "type":"bb"
+        }
+        , {
+          "name":"nw_kernel1.B0"
+          , "id":3962016656
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3966848160
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

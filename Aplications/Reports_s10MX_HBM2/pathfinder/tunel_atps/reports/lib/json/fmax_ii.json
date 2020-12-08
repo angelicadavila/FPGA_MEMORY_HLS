@@ -1,0 +1,95 @@
+{
+  "basicblocks":
+  {
+    "dynproc_kernel.B0":
+    {
+      "name":"dynproc_kernel.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":33
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "dynproc_kernel.B1":
+    {
+      "name":"dynproc_kernel.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":330
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"pathfinder_kernel_v5.cl"
+                , "line":"40"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "dynproc_kernel.B2":
+    {
+      "name":"dynproc_kernel.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "dynproc_kernel":
+    {
+      "debug":
+      [
+        {
+          "filename":"pathfinder_kernel_v5.cl"
+          , "line":17
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "dynproc_kernel__no_loop":
+        [
+          "dynproc_kernel.B0"
+          , "dynproc_kernel.B2"
+        ]
+        , "dynproc_kernel.B1":
+        [
+          "dynproc_kernel.B1"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,4308 @@
+{
+  "2448288024":
+  {
+    "nodes":
+    [
+      {
+        "name":"streaming_iamax.B0"
+        , "id":2448473936
+        , "start":"0"
+        , "end":"36"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":2451942400
+            , "start":"0"
+            , "end":"36"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_streaming_iamaxs_c0_enter_streaming_iamax1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"36"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"N"
+                , "id":2470944864
+                , "start":"0"
+                , "end":"1"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'N'"
+                    , "Start Cycle":"0"
+                    , "Latency":"1"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":2470946304
+                , "start":"1"
+                , "end":"1"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"-1 (0xFFFFFFFF)"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":25
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":">>"
+                , "id":2470946640
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Arithmetic Right Shift"
+                    , "Constant Operand":"31 (0x1F)"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":25
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470174672
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"31 (0x1F)"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":25
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":2470175008
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":25
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":2470176928
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":2470178944
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Xor"
+                , "id":2470177264
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Xor"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":2470181568
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":">>"
+                , "id":2470175344
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Arithmetic Right Shift"
+                    , "Constant Operand":"5 (0x5)"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":25
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":2470177600
+                , "start":"3"
+                , "end":"4"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Start Cycle":"3"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470177936
+                , "start":"4"
+                , "end":"4"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":2470178608
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"33-bit Integer Add"
+                    , "Constant Operand":"-1 (0x1FFFFFFFF)"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":2470184720
+                , "start":"5"
+                , "end":"5"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Start Cycle":"5"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":2452064816
+                , "start":"5"
+                , "end":"36"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"5"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"streaming_iamax.B1"
+        , "id":2448304256
+        , "start":"36"
+        , "end":"715"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 1"
+            , "id":2452121120
+            , "start":"36"
+            , "end":"75"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_for_cond1_preheader_streaming_iamaxs_c0_enter32_streaming_iamax1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"39"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":2470196384
+                , "start":"44"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"VECTOR_X"
+                , "id":2470202800
+                , "start":"36"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'VECTOR_X'"
+                    , "Start Cycle":"0"
+                    , "Latency":"8"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":2470207424
+                , "start":"44"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":2470211056
+                , "start":"44"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470213680
+                , "start":"44"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit And"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"'i'"
+                , "id":2470200320
+                , "start":"40"
+                , "end":"40"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"'i'"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":2470210048
+                , "start":"40"
+                , "end":"40"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"4"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":2470201296
+                , "start":"40"
+                , "end":"41"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"5 (0x5)"
+                    , "Start Cycle":"4"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":38
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":2470205632
+                , "start":"41"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"5"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":38
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470199984
+                , "start":"44"
+                , "end":"44"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"33-bit Select"
+                    , "Start Cycle":"8"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":2457741328
+                , "start":"44"
+                , "end":"75"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"8"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"192"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":2452607712
+            , "start":"75"
+            , "end":"587"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"1024 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"39"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"iamax.cl"
+                  , "line":38
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 2"
+            , "id":2452626528
+            , "start":"587"
+            , "end":"715"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_for_cond1_preheader_streaming_iamaxs_c1_enter_streaming_iamax5"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"551"
+                , "Cluster Latency":"128"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"And"
+                , "id":2470156256
+                , "start":"587"
+                , "end":"644"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"57"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470154576
+                , "start":"587"
+                , "end":"641"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"54"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470152896
+                , "start":"587"
+                , "end":"638"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"51"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470151216
+                , "start":"587"
+                , "end":"635"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"48"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470149536
+                , "start":"587"
+                , "end":"632"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"45"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470147856
+                , "start":"587"
+                , "end":"629"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"42"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470146176
+                , "start":"587"
+                , "end":"626"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"39"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470144496
+                , "start":"587"
+                , "end":"623"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"36"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470142816
+                , "start":"587"
+                , "end":"620"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"33"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470141136
+                , "start":"587"
+                , "end":"617"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470139792
+                , "start":"587"
+                , "end":"614"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"27"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470138112
+                , "start":"587"
+                , "end":"611"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"24"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470136432
+                , "start":"587"
+                , "end":"608"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"21"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470134752
+                , "start":"587"
+                , "end":"605"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"18"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470133072
+                , "start":"587"
+                , "end":"602"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"15"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470131392
+                , "start":"587"
+                , "end":"599"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"12"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470129712
+                , "start":"587"
+                , "end":"596"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"9"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470128032
+                , "start":"587"
+                , "end":"593"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"6"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470126352
+                , "start":"587"
+                , "end":"590"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2470125008
+                , "start":"587"
+                , "end":"587"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470125680
+                , "start":"587"
+                , "end":"589"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"551"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470126016
+                , "start":"589"
+                , "end":"590"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"553"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470127024
+                , "start":"590"
+                , "end":"592"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"554"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470127696
+                , "start":"592"
+                , "end":"593"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"556"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470128704
+                , "start":"593"
+                , "end":"595"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"557"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470129376
+                , "start":"595"
+                , "end":"596"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"559"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470130384
+                , "start":"596"
+                , "end":"598"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"560"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470131056
+                , "start":"598"
+                , "end":"599"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"562"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470132064
+                , "start":"599"
+                , "end":"601"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"563"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470132736
+                , "start":"601"
+                , "end":"602"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"565"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470133744
+                , "start":"602"
+                , "end":"604"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"566"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470134416
+                , "start":"604"
+                , "end":"605"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"568"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470135424
+                , "start":"605"
+                , "end":"607"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"569"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470136096
+                , "start":"607"
+                , "end":"608"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"571"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470137104
+                , "start":"608"
+                , "end":"610"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"572"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470137776
+                , "start":"610"
+                , "end":"611"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"574"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470138784
+                , "start":"611"
+                , "end":"613"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"575"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470139456
+                , "start":"613"
+                , "end":"614"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"577"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470140464
+                , "start":"614"
+                , "end":"616"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"578"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470140800
+                , "start":"616"
+                , "end":"617"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"580"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470141808
+                , "start":"617"
+                , "end":"619"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"581"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470142480
+                , "start":"619"
+                , "end":"620"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"583"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470143488
+                , "start":"620"
+                , "end":"622"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"584"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470144160
+                , "start":"622"
+                , "end":"623"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"586"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470145168
+                , "start":"623"
+                , "end":"625"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"587"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470145840
+                , "start":"625"
+                , "end":"626"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"589"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470146848
+                , "start":"626"
+                , "end":"628"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"590"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470147520
+                , "start":"628"
+                , "end":"629"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"592"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470148528
+                , "start":"629"
+                , "end":"631"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"593"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470149200
+                , "start":"631"
+                , "end":"632"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"595"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470150208
+                , "start":"632"
+                , "end":"634"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"596"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470150880
+                , "start":"634"
+                , "end":"635"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"598"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470151888
+                , "start":"635"
+                , "end":"637"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"599"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470152560
+                , "start":"637"
+                , "end":"638"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"601"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470153568
+                , "start":"638"
+                , "end":"640"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"602"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470154240
+                , "start":"640"
+                , "end":"641"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"604"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470155248
+                , "start":"641"
+                , "end":"643"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"605"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470155920
+                , "start":"643"
+                , "end":"644"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"607"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2470156928
+                , "start":"644"
+                , "end":"646"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"608"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470157600
+                , "start":"646"
+                , "end":"647"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"610"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470129040
+                , "start":"598"
+                , "end":"598"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"562"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470130720
+                , "start":"598"
+                , "end":"601"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"562"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470132400
+                , "start":"601"
+                , "end":"604"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"565"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470134080
+                , "start":"604"
+                , "end":"607"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"568"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470135760
+                , "start":"607"
+                , "end":"674"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"571"
+                    , "Latency":"67"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470137440
+                , "start":"674"
+                , "end":"674"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"638"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470139120
+                , "start":"674"
+                , "end":"674"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"638"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2457742064
+                , "start":"674"
+                , "end":"675"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"638"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470142144
+                , "start":"675"
+                , "end":"675"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"639"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470143824
+                , "start":"675"
+                , "end":"675"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"639"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470145504
+                , "start":"675"
+                , "end":"676"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"639"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470147184
+                , "start":"676"
+                , "end":"676"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"640"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470148864
+                , "start":"676"
+                , "end":"676"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"640"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470150544
+                , "start":"676"
+                , "end":"677"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"640"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470152224
+                , "start":"677"
+                , "end":"677"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"641"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470153904
+                , "start":"677"
+                , "end":"677"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"641"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470155584
+                , "start":"677"
+                , "end":"678"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"641"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2470157264
+                , "start":"678"
+                , "end":"678"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"642"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"'g_max_index'"
+                , "id":2469819104
+                , "start":"684"
+                , "end":"684"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"'g_max_index'"
+                    , "Start Cycle":"648"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":27
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"'g_max_value'"
+                , "id":2469817872
+                , "start":"683"
+                , "end":"683"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Feedback Read"
+                    , "Variable":"'g_max_value'"
+                    , "Start Cycle":"647"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":28
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469815856
+                , "start":"587"
+                , "end":"680"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"93"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469814176
+                , "start":"587"
+                , "end":"677"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"90"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469812496
+                , "start":"587"
+                , "end":"674"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"87"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469810816
+                , "start":"587"
+                , "end":"671"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"84"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469809136
+                , "start":"587"
+                , "end":"668"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"81"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469807456
+                , "start":"587"
+                , "end":"665"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"78"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469805776
+                , "start":"587"
+                , "end":"662"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"75"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469804096
+                , "start":"587"
+                , "end":"659"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"72"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469802416
+                , "start":"587"
+                , "end":"656"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"69"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469801072
+                , "start":"587"
+                , "end":"653"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"66"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469799392
+                , "start":"587"
+                , "end":"650"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"63"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":2469797712
+                , "start":"587"
+                , "end":"647"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit And"
+                    , "Constant Operand":"2147483647 (0x7FFFFFFF)"
+                    , "Start Cycle":"551"
+                    , "Latency":"60"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469798384
+                , "start":"647"
+                , "end":"649"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"611"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469799056
+                , "start":"649"
+                , "end":"650"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"613"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469800064
+                , "start":"650"
+                , "end":"652"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"614"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469800736
+                , "start":"652"
+                , "end":"653"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"616"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2458116144
+                , "start":"653"
+                , "end":"655"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"617"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469802080
+                , "start":"655"
+                , "end":"656"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"619"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469803088
+                , "start":"656"
+                , "end":"658"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"620"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469803760
+                , "start":"658"
+                , "end":"659"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"622"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469804768
+                , "start":"659"
+                , "end":"661"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"623"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469805440
+                , "start":"661"
+                , "end":"662"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"625"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469806448
+                , "start":"662"
+                , "end":"664"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"626"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469807120
+                , "start":"664"
+                , "end":"665"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"628"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469808128
+                , "start":"665"
+                , "end":"667"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"629"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469808800
+                , "start":"667"
+                , "end":"668"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"631"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469809808
+                , "start":"668"
+                , "end":"670"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"632"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469810480
+                , "start":"670"
+                , "end":"671"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"634"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469811488
+                , "start":"671"
+                , "end":"673"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"635"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469812160
+                , "start":"673"
+                , "end":"674"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"637"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469813168
+                , "start":"674"
+                , "end":"676"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"638"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469813840
+                , "start":"676"
+                , "end":"677"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"640"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469814848
+                , "start":"677"
+                , "end":"679"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"641"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469815520
+                , "start":"679"
+                , "end":"680"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"643"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469816528
+                , "start":"680"
+                , "end":"682"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"644"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469817536
+                , "start":"682"
+                , "end":"683"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"646"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FP Compare"
+                , "id":2469818768
+                , "start":"683"
+                , "end":"684"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Floating-point Compare"
+                    , "Start Cycle":"647"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469820416
+                , "start":"684"
+                , "end":"684"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"648"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469798720
+                , "start":"678"
+                , "end":"678"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"642"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469800400
+                , "start":"678"
+                , "end":"679"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"642"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469801744
+                , "start":"679"
+                , "end":"679"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"643"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469803424
+                , "start":"679"
+                , "end":"679"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"643"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469805104
+                , "start":"679"
+                , "end":"680"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"643"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469806784
+                , "start":"680"
+                , "end":"680"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"644"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469808464
+                , "start":"680"
+                , "end":"680"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"644"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469810144
+                , "start":"680"
+                , "end":"681"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"644"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469811824
+                , "start":"681"
+                , "end":"681"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"645"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469813504
+                , "start":"681"
+                , "end":"681"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"645"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469815184
+                , "start":"681"
+                , "end":"682"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"645"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469816864
+                , "start":"682"
+                , "end":"682"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"646"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":2469817200
+                , "start":"682"
+                , "end":"683"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Start Cycle":"646"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469820080
+                , "start":"684"
+                , "end":"684"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"648"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Src"
+                , "id":2469823744
+                , "start":"684"
+                , "end":"684"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Source"
+                    , "Start Cycle":"648"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":2470931616
+                , "start":"684"
+                , "end":"715"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"648"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"256"
+                    , "Exit FIFO Width":"8"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"streaming_iamax.B2"
+        , "id":2448304336
+        , "start":"715"
+        , "end":"760"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 3"
+            , "id":2452980528
+            , "start":"715"
+            , "end":"759"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_for_cond_cleanup_loopexit_streaming_iamaxs_c0_enter5_streaming_iamax0"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"44"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"FFwd Dest"
+                , "id":2457743632
+                , "start":"716"
+                , "end":"716"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":46
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Convert"
+                , "id":2470913088
+                , "start":"716"
+                , "end":"727"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer to Floating-point Conversion"
+                    , "Start Cycle":"1"
+                    , "Latency":"11"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":53
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"FFwd Dest"
+                , "id":2469825952
+                , "start":"728"
+                , "end":"728"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"FFwd Destination"
+                    , "Start Cycle":"13"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":30
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":2469829104
+                , "start":"728"
+                , "end":"728"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"13"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"iamax.cl"
+                      , "line":53
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"OUT"
+                , "id":2469829776
+                , "start":"715"
+                , "end":"728"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'OUT'"
+                    , "Start Cycle":"0"
+                    , "Latency":"13"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":2470941648
+                , "start":"728"
+                , "end":"759"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"13"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"128"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":2455430448
+            , "start":"759"
+            , "end":"760"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"44"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"iamax.cl"
+                  , "line":53
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

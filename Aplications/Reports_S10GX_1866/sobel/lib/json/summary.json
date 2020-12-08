@@ -1,0 +1,103 @@
+{
+  "performanceSummary":
+  {
+    "name":"Function Summary"
+    , "columns":
+    ["Function Name", "Hyper-Optimized Handshaking"]
+    , "children":
+    [
+      {
+        "name":"ImgSobel"
+        , "data":
+        [
+          "Off"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Hyper-optimized handshaking disabled due to loop orchestration compiler optimization being disabled in loop ImgSobel.B4."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"./img_filter_base.h"
+              , "line":197
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "functionNameMapping":
+  {
+    "name":"Synthesized Function Name Mapping"
+    , "columns":
+    ["User-defined Function Name", "Mapped Function Name"]
+    , "children":
+    [
+      {
+        "name":"void ImgSobel<unsigned char, signed char, (unsigned char)8, (unsigned short)1920, (unsigned short)1080, (unsigned char)3, (vx_border_e)49153>(vx_image<unsigned char, (unsigned char)8>*, vx_image<signed char, (unsigned char)8>*, vx_image<signed char, (unsigned char)8>*)"
+        , "data":
+        ["ImgSobel"]
+        , "debug":
+        [
+          [
+            {
+              "filename":"./img_filter_base.h"
+              , "line":197
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Function Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"ImgSobel"
+        , "data":
+        [17864, 24310, 113, 0, 386]
+        , "debug":
+        [
+          [
+            {
+              "filename":"./img_filter_base.h"
+              , "line":197
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [17864, 24310, 113, 0, 386]
+        , "data_percent":
+        [0.957219, 0.65131, 0.964082, 0]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [1866240, 3732480, 11721, 5760, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+    ]
+  }
+}

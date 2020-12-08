@@ -1,0 +1,2958 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [1.87073, 1.37088, 0.65131, 0.964082, 0]
+  , "total":
+  [17864, 24310, 113, 0, 386]
+  , "name":"System"
+  , "max_resources":
+  [1866240, 3732480, 11721, 5760, 93312]
+  , "children":
+  [
+    {
+      "name":"ImgSobel"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [1.87073, 1.37088, 0.65131, 0.964082, 0]
+      , "total_kernel_resources":
+      [17864, 24310, 113, 0, 386]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 192 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"192b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"1b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'ptr_dst' (img_filter_core.h:1428)"
+          , "type":"resource"
+          , "data":
+          [0, 0, 1, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":1428
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 114 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width by 114 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'ptr_src' (img_filter_core.h:1428)"
+          , "type":"resource"
+          , "data":
+          [0, 0, 1, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":1428
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 114 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width by 114 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'window' (img_filter_core.h:1424)"
+          , "type":"resource"
+          , "data":
+          [56, 72, 27, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":1424
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"3 registers of width 8 and depth 114 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"text"
+              , "text":"16 registers of width 8 and depth 115 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"text"
+              , "text":"8 registers of width 8 and depth 117 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n3 regs, 8 width by 114 depth,\n16 regs, 8 width by 115 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'x' (img_filter_core.h:1431)"
+          , "type":"resource"
+          , "data":
+          [8, 10, 2, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":1431
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 9 and depth 117 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 16 and depth 114 (depth was increased by a factor of 114 due to a loop initiation interval of 114.)"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 9 width by 117 depth,\n1 reg, 16 width by 114 depth"
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'y' (img_filter_core.h:1430)"
+          , "type":"resource"
+          , "data":
+          [16, 56, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":1430
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 12"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 16"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 12 width,\n1 reg, 16 width"
+            }
+          ]
+        }
+        , {
+          "name":"img_filter_core.h:1421 (linebuffer)"
+          , "type":"resource"
+          , "data":
+          [0, 0, 8, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":1421
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Memory system":"Potentially inefficient configuration"
+              , "Requested size":"3840 bytes"
+              , "Implemented size":"4096 bytes"
+              , "Number of banks":"4 (banked on bits 2, 3)"
+              , "Bank width":"32 bits"
+              , "Bank depth":"256 words"
+              , "Total replication":"1"
+              , "Additional information":
+              [
+                {
+                  "type":"text"
+                  , "text":"Requested size 3840 bytes, implemented size 4096 bytes, <b>stallable</b>, 4 reads and 4 writes. "
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Reduce the number of write accesses or fix banking to make this memory system stall-free. Banking may be improved by using compile-time known indexing on lowest array dimension."
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Banked on bits 2, 3 into 4 separate banks."
+                }
+              ]
+            }
+            , {
+              "type":"brief"
+              , "text":"Potentially inefficient configuration,\n3840B requested,\n4096B implemented."
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [1, 391, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1, 199, 0, 0, 0]
+                }
+                , {
+                  "name":"img_filter_base.h:197"
+                  , "type":"resource"
+                  , "data":
+                  [0, 192, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":197
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [23, 11, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [9, 2, 0, 0, 0]
+                }
+                , {
+                  "name":"img_filter_base.h:197"
+                  , "type":"resource"
+                  , "data":
+                  [14, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":197
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [18, 14, 0, 0, 2]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:197"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":197
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [4, 13, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [4, 13, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [38, 11, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1424"
+                  , "type":"resource"
+                  , "data":
+                  [6, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1424
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1430"
+                  , "type":"resource"
+                  , "data":
+                  [24, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1430
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1444"
+                  , "type":"resource"
+                  , "data":
+                  [8, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1444
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [16, 13, 0, 0, 1]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1430"
+                  , "type":"resource"
+                  , "data":
+                  [42.5, 0.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1430
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"12-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [12, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"12-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9.5, 0.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1443"
+                  , "type":"resource"
+                  , "data":
+                  [9.5, 0.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1443
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9.5, 0.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:490 > img_filter_core.h:256"
+                  , "type":"resource"
+                  , "data":
+                  [19, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":490
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":256
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [19, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1465"
+                  , "type":"resource"
+                  , "data":
+                  [5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1465
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B3"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [27, 19, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1444"
+                  , "type":"resource"
+                  , "data":
+                  [27, 19, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1444
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B4"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [3077, 7577, 20, 0, 106]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3077, 7577, 20, 0, 106]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [1204, 922, 54, 0, 11]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1424"
+                  , "type":"resource"
+                  , "data":
+                  [110, 82, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1424
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1428"
+                  , "type":"resource"
+                  , "data":
+                  [2, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1428
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1430"
+                  , "type":"resource"
+                  , "data":
+                  [77.5, 68, 2.5, 0, 1]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1430
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1431"
+                  , "type":"resource"
+                  , "data":
+                  [47, 58, 0, 0, 1]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1431
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1443"
+                  , "type":"resource"
+                  , "data":
+                  [0.5, 0, 0.5, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1443
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1444"
+                  , "type":"resource"
+                  , "data":
+                  [217, 118, 15, 0, 1]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1444
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1453 > \nimg_filter_core.h:54"
+                  , "type":"resource"
+                  , "data":
+                  [3, 0, 3, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1453
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1456 > \nimg_filter_core.h:131"
+                  , "type":"resource"
+                  , "data":
+                  [47, 16, 7, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1456
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":131
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:490 > img_filter_core.h:256"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 1, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":490
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":256
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1465"
+                  , "type":"resource"
+                  , "data":
+                  [11, 4, 1, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1465
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1467"
+                  , "type":"resource"
+                  , "data":
+                  [176, 64, 16, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1467
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1469"
+                  , "type":"resource"
+                  , "data":
+                  [512, 512, 8, 0, 8]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1469
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1360, 2460, 0, 0, 122]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1428"
+                  , "type":"resource"
+                  , "data":
+                  [64, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1428
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1430"
+                  , "type":"resource"
+                  , "data":
+                  [0.333333, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1430
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.333333, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1431"
+                  , "type":"resource"
+                  , "data":
+                  [37, 7, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1431
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"9-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"9-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Iteration Initiation"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 7, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1440"
+                  , "type":"resource"
+                  , "data":
+                  [252, 246, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1440
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [252, 246, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1443"
+                  , "type":"resource"
+                  , "data":
+                  [6.33333, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1443
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [1.33333, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1444"
+                  , "type":"resource"
+                  , "data":
+                  [1938.68, 1611.67, 0, 0, 48]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1444
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":216
+                      , "data":
+                      [72, 33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.66667, 2.66667, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [1864, 1576, 0, 0, 48]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1453 > \nimg_filter_core.h:54"
+                  , "type":"resource"
+                  , "data":
+                  [992.5, 879, 0, 0, 16]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1453
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":54
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [4.5, 3, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [988, 876, 0, 0, 16]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stallable read from memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"./img_filter_core.h"
+                              , "line":"1421"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1456 > \nimg_filter_core.h:131"
+                  , "type":"resource"
+                  , "data":
+                  [350.5, 1108, 0, 0, 16]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1456
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":131
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":15
+                      , "data":
+                      [10.5, 4, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [340, 1104, 0, 0, 16]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stallable write to memory declared on %L."
+                          , "links":
+                          [
+                            {
+                              "filename":"./img_filter_core.h"
+                              , "line":"1421"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:490 > img_filter_core.h:256"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":490
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":256
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:490 > img_filter_core.h:271"
+                  , "type":"resource"
+                  , "data":
+                  [46.6667, 34.6667, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":490
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":271
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [46.6667, 34.6667, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:493 > img_filter_core.h:304"
+                  , "type":"resource"
+                  , "data":
+                  [21, 16, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":493
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":304
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [16, 16, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:493 > img_filter_core.h:305"
+                  , "type":"resource"
+                  , "data":
+                  [4, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":493
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":305
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [4, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:493 > img_filter_core.h:307"
+                  , "type":"resource"
+                  , "data":
+                  [2.66667, 2.66667, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":493
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":307
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [2.66667, 2.66667, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:493 > img_filter_core.h:313"
+                  , "type":"resource"
+                  , "data":
+                  [99.3333, 65, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":493
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":313
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.333333, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [19, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":12
+                      , "data":
+                      [80, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1459 > \nimg_filter_core.h:493 > img_filter_core.h:316"
+                  , "type":"resource"
+                  , "data":
+                  [76, 64, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1459
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":493
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":316
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"8-bit Select"
+                      , "type":"resource"
+                      , "count":11
+                      , "data":
+                      [76, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1192 > img_filter_core.h:946"
+                  , "type":"resource"
+                  , "data":
+                  [145, 137, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1192
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":946
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [145, 137, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1192 > img_filter_core.h:947"
+                  , "type":"resource"
+                  , "data":
+                  [544, 536, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1192
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":947
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [544, 536, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1192 > img_filter_core.h:948"
+                  , "type":"resource"
+                  , "data":
+                  [544, 536, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1192
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":948
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [544, 536, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1192 > img_filter_core.h:951"
+                  , "type":"resource"
+                  , "data":
+                  [544, 536, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1192
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":951
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [544, 536, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1192 > img_filter_core.h:956"
+                  , "type":"resource"
+                  , "data":
+                  [543.5, 535.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1192
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":956
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [543.5, 535.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1192 > img_filter_core.h:962"
+                  , "type":"resource"
+                  , "data":
+                  [135.5, 133.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1192
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":962
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [135.5, 133.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1195 > img_filter_core.h:1005"
+                  , "type":"resource"
+                  , "data":
+                  [145, 137, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1195
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1005
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [145, 137, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1195 > img_filter_core.h:1006"
+                  , "type":"resource"
+                  , "data":
+                  [544, 536, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1195
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1006
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [544, 536, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1195 > img_filter_core.h:1007"
+                  , "type":"resource"
+                  , "data":
+                  [544, 536, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1195
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1007
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [544, 536, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1195 > img_filter_core.h:1010"
+                  , "type":"resource"
+                  , "data":
+                  [544, 536, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1195
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1010
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [544, 536, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1195 > img_filter_core.h:1015"
+                  , "type":"resource"
+                  , "data":
+                  [543, 535, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1195
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1015
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":9
+                      , "data":
+                      [543, 535, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1195 > img_filter_core.h:1021"
+                  , "type":"resource"
+                  , "data":
+                  [135, 133, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1195
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1021
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [135, 133, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1462 > \nimg_filter_core.h:1216"
+                  , "type":"resource"
+                  , "data":
+                  [250, 245, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1462
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1216
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [250, 245, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1465"
+                  , "type":"resource"
+                  , "data":
+                  [1, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1465
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1467"
+                  , "type":"resource"
+                  , "data":
+                  [1409.51, 1810, 0, 0, 32]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1467
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":267
+                      , "data":
+                      [97.5001, 42, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [1312, 1768, 0, 0, 32]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"img_filter_base.h:200 > img_filter_core.h:1894 > \nimg_filter_core.h:1512 > img_filter_core.h:1469"
+                  , "type":"resource"
+                  , "data":
+                  [1433.51, 1810, 0, 0, 32]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":200
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1894
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1512
+                      }
+                      , {
+                        "filename":"./img_filter_core.h"
+                        , "line":1469
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":267
+                      , "data":
+                      [97.5001, 42, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [1336, 1768, 0, 0, 32]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Store uses a Local-pipelined LSU"
+                        }
+                        , {
+                          "type":"brief"
+                          , "text":"Local-pipelined LSU"
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B5"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 8, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [5, 8, 0, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"img_filter_base.h:201"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./img_filter_base.h"
+                        , "line":201
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

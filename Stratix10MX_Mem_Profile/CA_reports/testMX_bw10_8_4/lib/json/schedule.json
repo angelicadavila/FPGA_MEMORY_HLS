@@ -1,0 +1,1134 @@
+{
+  "1086582040":
+  {
+    "nodes":
+    [
+      {
+        "name":"test_multiplereads.B0"
+        , "id":1086747888
+        , "start":"0"
+        , "end":"658"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":1089470416
+            , "start":"0"
+            , "end":"34"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_test_multiplereadss_c0_enter_test_multiplereads1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"34"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":1099801264
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Left Shift"
+                    , "Constant Operand":"35 (0x23)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":">>"
+                , "id":1099673184
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Arithmetic Right Shift"
+                    , "Constant Operand":"32 (0x20)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"z"
+                , "id":1091561952
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'z'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":1089853360
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"y1"
+                , "id":1099645152
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'y1'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":1099650144
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"y"
+                , "id":1099647872
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'y'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":1099649008
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"y2"
+                , "id":1099651280
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'y2'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":1099646288
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"x"
+                , "id":1099654032
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'x'"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":1099652864
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":1090266432
+                , "start":"3"
+                , "end":"34"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"3"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"384"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":1099608912
+            , "start":"34"
+            , "end":"546"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"256 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"34"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":39
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":1099555280
+            , "start":"34"
+            , "end":"546"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"256 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"34"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":39
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":1099553184
+            , "start":"34"
+            , "end":"546"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"256 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"34"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":39
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":1099548096
+            , "start":"34"
+            , "end":"546"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"256 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"34"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":39
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 2"
+            , "id":1090015344
+            , "start":"546"
+            , "end":"594"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_entry_test_multiplereadss_c2_enter_test_multiplereads11"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"546"
+                , "Cluster Latency":"48"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Hard FP +"
+                , "id":1099685072
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094655696
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099842992
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099684736
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094655360
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099842656
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099684400
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094655024
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099842320
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099684064
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094654688
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099841984
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099683728
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099753584
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094659728
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099683392
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099753248
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094659392
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099683056
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099752912
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094659056
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1093256416
+                , "start":"546"
+                , "end":"551"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"546"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1099752576
+                , "start":"552"
+                , "end":"557"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"552"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard FP +"
+                , "id":1094658720
+                , "start":"558"
+                , "end":"563"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"558"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_bw10.cl"
+                      , "line":39
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":1099604096
+                , "start":"563"
+                , "end":"594"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"563"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"264"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 1"
+            , "id":1089978080
+            , "start":"34"
+            , "end":"65"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_entry_test_multiplereadss_c1_enter_test_multiplereads8"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"34"
+                , "Cluster Latency":"31"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Exit"
+                , "id":1092151760
+                , "start":"34"
+                , "end":"65"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"34"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"128"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":1089791264
+            , "start":"594"
+            , "end":"658"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"256 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"594"
+                , "Latency":"64"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_bw10.cl"
+                  , "line":39
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

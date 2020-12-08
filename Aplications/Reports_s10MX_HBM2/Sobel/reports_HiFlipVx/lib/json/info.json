@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["./HiFlipVX_Intel"],"name":"Project Name"},
+{"data":["Stratix10, 1SM21BHU2F53E2VGS1"],"name":"Target Family, Device"},
+{"data":["19.4.0 Build 64"],"name":"i++ Version"},
+{"data":["19.4.0 Build 64 Pro"],"name":"Quartus Version"},
+{"data":["i++ ./include/bmp_tool/bmp_tools.cpp ./graph_test/sobel.cpp -D Intel -I./include -I./include/bmp_tool -I./graph_test -march=1sm21bhu2f53e2vgs1 --simulator none -v -o HiFlipVX_Intel"],"name":"Command"},
+{"data":["Tue Jun 30 12:32:50 2020"],"name":"Reports Generated At"}
+]}

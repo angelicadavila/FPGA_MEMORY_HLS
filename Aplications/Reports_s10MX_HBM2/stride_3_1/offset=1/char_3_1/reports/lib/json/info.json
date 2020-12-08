@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["test_bw10_delta"],"name":"Project Name"},
+{"data":["Stratix 10, 1SM21BHU2F53E2VGS1, s10mx_ref:s10mx_hbm_es"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":[""],"name":"Quartus Version"},
+{"data":["aoc -rtl -D INPUTS=1 -D delta=3 test_bw10_delta.cl -board-package=/mnt/extra/Angelica/exm_binary/stratixMX/BSPMX/s10mx_ref"],"name":"Command"},
+{"data":["Fri Sep  4 12:13:23 2020"],"name":"Reports Generated At"}
+]}

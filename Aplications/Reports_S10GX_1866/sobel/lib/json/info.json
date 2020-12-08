@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["./HFVX_fpga"],"name":"Project Name"},
+{"data":["Stratix10, 1SG280LU3F50I2VG"],"name":"Target Family, Device"},
+{"data":["19.1.0 Build 240"],"name":"i++ Version"},
+{"data":["19.1.0 Build 240 Pro"],"name":"Quartus Version"},
+{"data":["i++ main.cpp -D Intel -march=Stratix10 --simulator none -v -o HFVX_fpga"],"name":"Command"},
+{"data":["Fri Nov 29 16:32:01 2019"],"name":"Reports Generated At"}
+]}

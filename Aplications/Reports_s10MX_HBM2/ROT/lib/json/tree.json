@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"streaming_rot"
+      , "id":4255869144
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"streaming_rot.B1"
+          , "id":4255867008
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":4265172560
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":4264206864
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"streaming_rot.B2"
+          , "id":4255867088
+          , "type":"bb"
+        }
+        , {
+          "name":"streaming_rot.B0"
+          , "id":4256040064
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":4264027040
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

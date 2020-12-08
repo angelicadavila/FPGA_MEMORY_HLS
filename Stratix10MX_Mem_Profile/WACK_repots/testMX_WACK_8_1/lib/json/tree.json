@@ -1,0 +1,64 @@
+{
+  "nodes":
+  [
+    {
+      "name":"test_random_access"
+      , "id":2936745128
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"test_random_access.B0"
+          , "id":2936913440
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 7"
+              , "id":2941083424
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":2940652080
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":2940565504
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":2940738464
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 5"
+              , "id":2940910816
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 0"
+              , "id":2939997952
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 4"
+              , "id":2940824736
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 6"
+              , "id":2940996912
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

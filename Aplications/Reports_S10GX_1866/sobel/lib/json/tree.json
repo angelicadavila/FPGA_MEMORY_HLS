@@ -1,0 +1,130 @@
+{
+  "nodes":
+  [
+    {
+      "name":"ImgSobel"
+      , "id":4248849672
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"ImgSobel.B5"
+          , "id":4248847376
+          , "type":"bb"
+        }
+        , {
+          "name":"ImgSobel.B4"
+          , "id":4248847296
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 9"
+              , "id":4268183200
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 11"
+              , "id":4267098768
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 12"
+              , "id":4270915376
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 13"
+              , "id":4270954864
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 7"
+              , "id":4267243728
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 3"
+              , "id":4265675952
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 5"
+              , "id":4266913504
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 6"
+              , "id":4267099808
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 8"
+              , "id":4267387360
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 14"
+              , "id":4271300544
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 4"
+              , "id":4266062096
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 10"
+              , "id":4268247216
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B3"
+          , "id":4248847216
+          , "type":"bb"
+        }
+        , {
+          "name":"ImgSobel.B2"
+          , "id":4248965584
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":4261595104
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B1.start"
+          , "id":4248914256
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":4261501472
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 0"
+              , "id":4261277312
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"ImgSobel.B0.runOnce"
+          , "id":4248914336
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

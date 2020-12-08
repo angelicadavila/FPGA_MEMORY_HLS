@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["t1_1_ul8"],"name":"Project Name"},
+{"data":["Stratix 10, 1SM21BHU2F53E2VGS1, s10mx_ref:s10mx_hbm"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":[""],"name":"Quartus Version"},
+{"data":["aoc -rtl -fp-relaxed -board-package=/home/angelica/Quartus/s10mx_ref t1-1_ul8.cl"],"name":"Command"},
+{"data":["Thu Sep 10 18:24:15 2020"],"name":"Reports Generated At"}
+]}

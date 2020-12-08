@@ -1,8 +1,0 @@
-{"name":"Info","rows":[
-{"classes":["info-table"],"name":"Project Name","data":["dot_prod"]},
-{"name":"Target Family, Device, Board","data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"]},
-{"name":"AOC Version","data":["18.1.0 Build 222"]},
-{"name":"Quartus Version","data":["18.1.0 Build 222 Pro"]},
-{"name":"Command","data":["aoc -rtl dot_prod.cl"]},
-{"name":"Reports Generated At","data":["Mon Oct 14 13:29:16 2019"]}
-]}

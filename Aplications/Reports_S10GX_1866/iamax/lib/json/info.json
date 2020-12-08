@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["iamax_GX"],"name":"Project Name"},
+{"data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":["19.4.0 Build 64 Pro"],"name":"Quartus Version"},
+{"data":["aoc -board-package=/home/angelica/intelFPGA_pro/19.4/hld/board/s10_ref -profile iamax.cl -o iamax_GX.aocx"],"name":"Command"},
+{"data":["Mon Oct  5 12:46:15 2020"],"name":"Reports Generated At"}
+]}

@@ -1,0 +1,1990 @@
+{
+  "2709162304":
+  {
+    "nodes":
+    [
+      {
+        "name":"y1"
+        , "id":2711120592
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'y1'"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"z"
+        , "id":2711175792
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'z'"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":2711362656
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":2711540976
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"y"
+        , "id":2711627904
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'y'"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":2711630272
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"<<"
+        , "id":2712247120
+        , "start":"0"
+        , "end":"1.2e-38"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Left Shift"
+            , "Constant Operand":"36 (0x24)"
+            , "Start Cycle":"0"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Ptr. Comp."
+        , "id":2712248704
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Pointer Computation"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":2713832272
+        , "start":"3"
+        , "end":"34"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Exit Start Cycle":"3"
+            , "Exit Latency":"31"
+            , "Exit FIFO Depth":"64"
+            , "Exit FIFO Width":"320"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"x"
+        , "id":2713988272
+        , "start":"0"
+        , "end":"3"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Input Synchronization for 'x'"
+            , "Start Cycle":"0"
+            , "Latency":"3"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":">>"
+        , "id":2713992128
+        , "start":"0"
+        , "end":"1.2e-38"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"64-bit Arithmetic Right Shift"
+            , "Constant Operand":"32 (0x20)"
+            , "Start Cycle":"0"
+            , "Latency":"0"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Entry"
+        , "id":2713993264
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Start Cycle":"0"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":2711120592
+        , "to":2711630272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2711175792
+        , "to":2711362656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2711362656
+        , "to":2713832272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2711540976
+        , "to":2713832272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2711627904
+        , "to":2711540976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2711630272
+        , "to":2713832272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2712247120
+        , "to":2713992128
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2712248704
+        , "to":2713832272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2713988272
+        , "to":2712248704
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2713992128
+        , "to":2711362656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2713992128
+        , "to":2711540976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2713992128
+        , "to":2711630272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2713992128
+        , "to":2712248704
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"64"
+          }
+        ]
+      }
+      , {
+        "from":2713993264
+        , "to":2712247120
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"128"
+          }
+        ]
+      }
+    ]
+  }
+  , "2709653904":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":2710954528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Start Cycle":"34"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":2712429536
+        , "start":"34"
+        , "end":"65"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Exit Start Cycle":"34"
+            , "Exit Latency":"31"
+            , "Exit FIFO Depth":"32"
+            , "Exit FIFO Width":"128"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+  , "2709690608":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":2711593168
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Start Cycle":"546"
+            , "Latency":"0"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712444592
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712444928
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712445264
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712445600
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712445936
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712446272
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712446608
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712446944
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712882976
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712883312
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712883648
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712883984
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712884320
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712884656
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712884992
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712885328
+        , "start":"5.5e+02"
+        , "end":"5.5e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"546"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":2712898416
+        , "start":"5.6e+02"
+        , "end":"5.9e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Exit Start Cycle":"557"
+            , "Exit Latency":"31"
+            , "Exit FIFO Depth":"64"
+            , "Exit FIFO Width":"520"
+            , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712904624
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712904960
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712905296
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712905632
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712905968
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712906304
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712906640
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712906976
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712907312
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712907648
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712907984
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712908320
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2712908656
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2714551744
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2714552080
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Hard FP +"
+        , "id":2714552416
+        , "start":"5.5e+02"
+        , "end":"5.6e+02"
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Hardened Floating-point Add"
+            , "Start Cycle":"552"
+            , "Latency":"5"
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_bw10.cl"
+              , "line":37
+            }
+          ]
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+      {
+        "from":2711593168
+        , "to":2712444592
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712444928
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712445264
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712445600
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712445936
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712446272
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712446608
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712446944
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712882976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712883312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712883648
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712883984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712884320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712884656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712884992
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712885328
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712904624
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712904960
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712905296
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712905632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712905968
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712906304
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712906640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712906976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712907312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712907648
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712907984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712908320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2712908656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2714551744
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2714552080
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2711593168
+        , "to":2714552416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"1544"
+          }
+        ]
+      }
+      , {
+        "from":2712444592
+        , "to":2712906304
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712444928
+        , "to":2712906640
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712445264
+        , "to":2712906976
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712445600
+        , "to":2712907312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712445936
+        , "to":2712907648
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712446272
+        , "to":2712907984
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712446608
+        , "to":2712908320
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712446944
+        , "to":2712908656
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712882976
+        , "to":2714551744
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712883312
+        , "to":2714552080
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712883648
+        , "to":2714552416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712883984
+        , "to":2712904624
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712884320
+        , "to":2712904960
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712884656
+        , "to":2712905296
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712884992
+        , "to":2712905632
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712885328
+        , "to":2712905968
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712904624
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712904960
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712905296
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712905632
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712905968
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712906304
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712906640
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712906976
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712907312
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712907648
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712907984
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712908320
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2712908656
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2714551744
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2714552080
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+      , {
+        "from":2714552416
+        , "to":2712898416
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Width":"32"
+          }
+        ]
+      }
+    ]
+  }
+}

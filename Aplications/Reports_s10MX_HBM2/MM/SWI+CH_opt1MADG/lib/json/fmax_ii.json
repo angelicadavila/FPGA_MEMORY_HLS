@@ -1,0 +1,398 @@
+{
+  "basicblocks":
+  {
+    "in.B0":
+    {
+      "name":"in.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":17
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "in.B1":
+    {
+      "name":"in.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":8
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"t1-1_ul8.cl"
+                , "line":"15"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "in.B2":
+    {
+      "name":"in.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "in.B3":
+    {
+      "name":"in.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "in.B4":
+    {
+      "name":"in.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":199
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"t1-1_ul8.cl"
+                , "line":"17"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "matrixMult.B0":
+    {
+      "name":"matrixMult.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":9
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "matrixMult.B1":
+    {
+      "name":"matrixMult.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":9
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"t1-1_ul8.cl"
+                , "line":"33"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "matrixMult.B2":
+    {
+      "name":"matrixMult.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "matrixMult.B3":
+    {
+      "name":"matrixMult.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":12
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "matrixMult.B4":
+    {
+      "name":"matrixMult.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":21
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"t1-1_ul8.cl"
+                , "line":"35"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "matrixMult.B5":
+    {
+      "name":"matrixMult.B5"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":15
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"t1-1_ul8.cl"
+                , "line":"38"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "matrixMult.B6":
+    {
+      "name":"matrixMult.B6"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "matrixMult.B7":
+    {
+      "name":"matrixMult.B7"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":41
+      , "latency":254
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":3
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"t1-1_ul8.cl"
+                , "line":"41"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "matrixMult.B8":
+    {
+      "name":"matrixMult.B8"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":10
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "in":
+    {
+      "debug":
+      [
+        {
+          "filename":"t1-1_ul8.cl"
+          , "line":13
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "in__no_loop":
+        [
+          "in.B0"
+          , "in.B2"
+        ]
+        , "in.B1":
+        [
+          "in.B1"
+          , "in.B4"
+          , "in.B3"
+        ]
+        , "in.B4":
+        [
+          "in.B4"
+        ]
+      }
+    }
+    , "matrixMult":
+    {
+      "debug":
+      [
+        {
+          "filename":"t1-1_ul8.cl"
+          , "line":25
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "matrixMult__no_loop":
+        [
+          "matrixMult.B0"
+          , "matrixMult.B2"
+        ]
+        , "matrixMult.B1":
+        [
+          "matrixMult.B1"
+          , "matrixMult.B3"
+          , "matrixMult.B4"
+          , "matrixMult.B5"
+          , "matrixMult.B6"
+        ]
+        , "matrixMult.B4":
+        [
+          "matrixMult.B4"
+        ]
+        , "matrixMult.B5":
+        [
+          "matrixMult.B5"
+          , "matrixMult.B7"
+          , "matrixMult.B8"
+        ]
+        , "matrixMult.B7":
+        [
+          "matrixMult.B7"
+        ]
+      }
+    }
+  }
+}

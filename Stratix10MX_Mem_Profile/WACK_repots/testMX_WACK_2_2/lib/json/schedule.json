@@ -1,0 +1,920 @@
+{
+  "4003631432":
+  {
+    "nodes":
+    [
+      {
+        "name":"test_random_access.B0"
+        , "id":4003798176
+        , "start":"0"
+        , "end":"905"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":4006464304
+            , "start":"0"
+            , "end":"37"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_entry_test_random_accesss_c1_enter_test_random_access1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"37"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":4007790160
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Left Shift"
+                    , "Constant Operand":"2 (0x2)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":4009908064
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit And"
+                    , "Constant Operand":"4092 (0xFFC)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Inttoptr"
+                , "id":4007224384
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Inttoptr"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ROM Lookup"
+                , "id":4011186464
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"On-chip Read-Only Memory Lookup"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"x"
+                , "id":4008979696
+                , "start":"0"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'x'"
+                    , "Start Cycle":"0"
+                    , "Latency":"6"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4008068672
+                , "start":"3"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"3"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"z"
+                , "id":4009907088
+                , "start":"0"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'z'"
+                    , "Start Cycle":"0"
+                    , "Latency":"6"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4010514816
+                , "start":"3"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"3"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"y"
+                , "id":4018272992
+                , "start":"0"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'y'"
+                    , "Start Cycle":"0"
+                    , "Latency":"6"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4010538032
+                , "start":"3"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"3"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":4007044880
+                , "start":"6"
+                , "end":"37"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"6"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"256"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":4010648256
+            , "start":"37"
+            , "end":"549"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"37"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_WACK.cl"
+                  , "line":49
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":4010168976
+            , "start":"37"
+            , "end":"549"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"37"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_WACK.cl"
+                  , "line":49
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 2"
+            , "id":4007343184
+            , "start":"549"
+            , "end":"585"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_entry_test_random_accesss_c2_enter_test_random_access11"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"549"
+                , "Cluster Latency":"36"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Hard FP +"
+                , "id":4010855824
+                , "start":"549"
+                , "end":"554"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"549"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":4008992256
+                , "start":"554"
+                , "end":"585"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"554"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"64"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":4009070976
+            , "start":"585"
+            , "end":"841"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"585"
+                , "Latency":"256"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_WACK.cl"
+                  , "line":49
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 1"
+            , "id":4006851520
+            , "start":"0"
+            , "end":"293"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_test_random_accesss_c0_enter_test_random_access4"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"293"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":4007543632
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Left Shift"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"And"
+                , "id":4015081008
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit And"
+                    , "Constant Operand":"2046 (0x7FE)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4015081344
+                , "start":"0"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"0"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptrtoint"
+                , "id":4009975504
+                , "start":"3"
+                , "end":"3"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Ptrtoint"
+                    , "Start Cycle":"3"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":">>"
+                , "id":4011017680
+                , "start":"3"
+                , "end":"256"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Logical Right Shift"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"3"
+                    , "Latency":"253"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Inttoptr"
+                , "id":4010159312
+                , "start":"256"
+                , "end":"256"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Inttoptr"
+                    , "Start Cycle":"256"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ROM Lookup"
+                , "id":4010473792
+                , "start":"256"
+                , "end":"258"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"On-chip Read-Only Memory Lookup"
+                    , "Start Cycle":"256"
+                    , "Latency":"2"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":42
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"y"
+                , "id":4009972112
+                , "start":"0"
+                , "end":"262"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'y'"
+                    , "Start Cycle":"0"
+                    , "Latency":"262"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4018701552
+                , "start":"259"
+                , "end":"262"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"259"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"z"
+                , "id":4010539648
+                , "start":"0"
+                , "end":"262"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'z'"
+                    , "Start Cycle":"0"
+                    , "Latency":"262"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4010033840
+                , "start":"259"
+                , "end":"262"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"259"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"x"
+                , "id":4012368656
+                , "start":"0"
+                , "end":"262"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'x'"
+                    , "Start Cycle":"0"
+                    , "Latency":"262"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":4009927184
+                , "start":"259"
+                , "end":"262"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"259"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":4007048736
+                , "start":"262"
+                , "end":"293"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"262"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"512"
+                    , "Exit FIFO Width":"256"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":4011374720
+            , "start":"293"
+            , "end":"805"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"293"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_WACK.cl"
+                  , "line":49
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":4010645904
+            , "start":"293"
+            , "end":"805"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"293"
+                , "Latency":"512"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_WACK.cl"
+                  , "line":49
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 3"
+            , "id":4007378096
+            , "start":"805"
+            , "end":"841"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c3_in_entry_test_random_accesss_c3_enter_test_random_access14"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"805"
+                , "Cluster Latency":"36"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Hard FP +"
+                , "id":4012839920
+                , "start":"805"
+                , "end":"810"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Floating-point Add"
+                    , "Start Cycle":"805"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_WACK.cl"
+                      , "line":49
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":4018272000
+                , "start":"810"
+                , "end":"841"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"810"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"64"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":4008706032
+            , "start":"841"
+            , "end":"905"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"32 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"841"
+                , "Latency":"64"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_WACK.cl"
+                  , "line":49
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "basicblocks":
+  {
+    "nw_kernel1.B0":
+    {
+      "name":"nw_kernel1.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":33
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "nw_kernel1.B1":
+    {
+      "name":"nw_kernel1.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"283.4"
+      , "achieved_ii":1
+      , "latency":674
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"Yes"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Variable on loop carried feedback path"
+        }
+        , {
+          "type":"text"
+          , "text":"Loop feedback path that lowered Fmax "
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Node: 32-bit Integer Compare Operation (%L)"
+              , "links":
+              [
+                {
+                  "filename":"Unknown location"
+                  , "line":"0"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Node: 32-bit Integer Subtract Operation (%L)"
+              , "links":
+              [
+                {
+                  "filename":"nw.cl"
+                  , "line":"169"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Node: 32-bit Select Operation (%L, %L)"
+              , "links":
+              [
+                {
+                  "filename":"nw.cl"
+                  , "line":"171"
+                }
+                , {
+                  "filename":"nw.cl"
+                  , "line":"175"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Node: 32-bit Select Operation (%L)"
+              , "links":
+              [
+                {
+                  "filename":"nw.cl"
+                  , "line":"175"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"nw.cl"
+                , "line":"74"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "nw_kernel1.B2":
+    {
+      "name":"nw_kernel1.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "nw_kernel1":
+    {
+      "debug":
+      [
+        {
+          "filename":"nw.cl"
+          , "line":4
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "nw_kernel1__no_loop":
+        [
+          "nw_kernel1.B0"
+          , "nw_kernel1.B2"
+        ]
+        , "nw_kernel1.B1":
+        [
+          "nw_kernel1.B1"
+        ]
+      }
+    }
+  }
+}

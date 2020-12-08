@@ -1,0 +1,39 @@
+{
+  "nodes":
+  [
+    {
+      "name":"test_multiplereads"
+      , "id":3929504664
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"test_multiplereads.B0"
+          , "id":3929711104
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3932089984
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":3932388080
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":3932421664
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

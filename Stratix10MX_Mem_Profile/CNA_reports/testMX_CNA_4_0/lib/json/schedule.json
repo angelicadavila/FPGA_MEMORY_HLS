@@ -1,0 +1,390 @@
+{
+  "1978489928":
+  {
+    "nodes":
+    [
+      {
+        "name":"test_multiplereads.B0"
+        , "id":1978708208
+        , "start":"0"
+        , "end":"44"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":1981062576
+            , "start":"0"
+            , "end":"42"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_test_multiplereadss_c0_enter_test_multiplereads1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"42"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":1982459648
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"3 (0x3)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":1982428704
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"2 (0x2)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":1985844176
+                , "start":"0"
+                , "end":"8"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"0"
+                    , "Latency":"8"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":1982887712
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"2 (0x2)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Convert"
+                , "id":1986900880
+                , "start":"0"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer to Floating-point Conversion"
+                    , "Start Cycle":"0"
+                    , "Latency":"11"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":40
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":1982593664
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"3 (0x3)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Convert"
+                , "id":1986950000
+                , "start":"0"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer to Floating-point Conversion"
+                    , "Start Cycle":"0"
+                    , "Latency":"11"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":40
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Convert"
+                , "id":1982592976
+                , "start":"0"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer to Floating-point Conversion"
+                    , "Start Cycle":"0"
+                    , "Latency":"11"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":40
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":1981295808
+                , "start":"0"
+                , "end":"0"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"0"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":35
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Convert"
+                , "id":1986946816
+                , "start":"0"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer to Floating-point Conversion"
+                    , "Start Cycle":"0"
+                    , "Latency":"11"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":40
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"z"
+                , "id":1981156608
+                , "start":"0"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'z'"
+                    , "Start Cycle":"0"
+                    , "Latency":"11"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":1986950912
+                , "start":"8"
+                , "end":"11"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"8"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"test_CNA.cl"
+                      , "line":40
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":1981303424
+                , "start":"11"
+                , "end":"42"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"11"
+                    , "Exit Latency":"31"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"640"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":1985888880
+            , "start":"42"
+            , "end":"44"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"512 bits"
+                , "LSU Style":"Burst-coalesced non-aligned"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"42"
+                , "Latency":"2"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"test_CNA.cl"
+                  , "line":40
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

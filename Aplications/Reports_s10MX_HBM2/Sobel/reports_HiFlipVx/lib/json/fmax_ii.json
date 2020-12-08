@@ -1,0 +1,920 @@
+{
+  "basicblocks":
+  {
+    "ImgSobelFunc.B0.runOnce":
+    {
+      "name":"ImgSobelFunc.B0.runOnce"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "ImgSobelFunc.B1.start":
+    {
+      "name":"ImgSobelFunc.B1.start"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":16
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"Unknown location"
+                , "line":"0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobelIntel.B0.runOnce":
+    {
+      "name":"ImgSobelIntel.B0.runOnce"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "ImgSobelIntel.B1.start":
+    {
+      "name":"ImgSobelIntel.B1.start"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":9
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"Unknown location"
+                , "line":"0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobelIntel.B2":
+    {
+      "name":"ImgSobelIntel.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"1"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":9
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":"1888"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobelIntel.B3":
+    {
+      "name":"ImgSobelIntel.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"1"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+      }
+    }
+    , "ImgSobelIntel.B4":
+    {
+      "name":"ImgSobelIntel.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"388.8"
+      , "achieved_ii":1
+      , "latency":88
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"Yes"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":3
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Variable on loop carried feedback path"
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+              , "links":
+              [
+                {
+                  "filename":"./include/img_filter_base_intel.h"
+                  , "line":"11"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2749"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2215"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"1929"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"69"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+              , "links":
+              [
+                {
+                  "filename":"./include/img_filter_base_intel.h"
+                  , "line":"11"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2749"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2215"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"1929"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"69"
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+              , "links":
+              [
+                {
+                  "filename":"./include/img_filter_base_intel.h"
+                  , "line":"11"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2749"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2215"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"1935"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"169"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"text"
+          , "text":"Loop feedback path that lowered Fmax "
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Node: 16-bit Integer Add Operation (%L > %L > %L > %L)"
+              , "links":
+              [
+                {
+                  "filename":"./include/img_filter_base_intel.h"
+                  , "line":"11"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2749"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"2215"
+                }
+                , {
+                  "filename":"./include/img_filter_core.h"
+                  , "line":"1890"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":"1890"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobelIntel.B5":
+    {
+      "name":"ImgSobelIntel.B5"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "vxReadDram.B0.runOnce":
+    {
+      "name":"vxReadDram.B0.runOnce"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "vxReadDram.B1.start":
+    {
+      "name":"vxReadDram.B1.start"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":14
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"Unknown location"
+                , "line":"0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxReadDram.B2":
+    {
+      "name":"vxReadDram.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"1"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":87
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":"26"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxReadDram.B3":
+    {
+      "name":"vxReadDram.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":5
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "vxReadDram.B4":
+    {
+      "name":"vxReadDram.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"1"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+      }
+    }
+    , "vxReadDram.B5":
+    {
+      "name":"vxReadDram.B5"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":9
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":3
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":"38"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxWriteDram.B0.runOnce":
+    {
+      "name":"vxWriteDram.B0.runOnce"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "vxWriteDram.B1.start":
+    {
+      "name":"vxWriteDram.B1.start"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":14
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"Unknown location"
+                , "line":"0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxWriteDram.B2":
+    {
+      "name":"vxWriteDram.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":8
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":"71"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxWriteDram.B3":
+    {
+      "name":"vxWriteDram.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "vxWriteDram.B4":
+    {
+      "name":"vxWriteDram.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":34
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+      }
+    }
+    , "vxWriteDram.B5":
+    {
+      "name":"vxWriteDram.B5"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"432.0"
+      , "achieved_ii":1
+      , "latency":13
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"Yes"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":3
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Variable on loop carried feedback path"
+        }
+      ]
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":"73"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxWriteDram_1.B0.runOnce":
+    {
+      "name":"vxWriteDram_1.B0.runOnce"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "vxWriteDram_1.B1.start":
+    {
+      "name":"vxWriteDram_1.B1.start"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":14
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"Unknown location"
+                , "line":"0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxWriteDram_1.B2":
+    {
+      "name":"vxWriteDram_1.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":8
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":"71"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "vxWriteDram_1.B3":
+    {
+      "name":"vxWriteDram_1.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+    , "vxWriteDram_1.B4":
+    {
+      "name":"vxWriteDram_1.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":34
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+      }
+    }
+    , "vxWriteDram_1.B5":
+    {
+      "name":"vxWriteDram_1.B5"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"432.0"
+      , "achieved_ii":1
+      , "latency":13
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"Yes"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":3
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Variable on loop carried feedback path"
+        }
+      ]
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./include/link_OpenCLIntel.h"
+                , "line":"73"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  , "functions":
+  {
+    "ImgSobelFunc":
+    {
+      "debug":
+      [
+        {
+          "filename":"./graph_test/sobel.h"
+          , "line":30
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "ImgSobelFunc__no_loop":
+        [
+          "ImgSobelFunc.B0.runOnce"
+        ]
+        , "ImgSobelFunc.B1.start":
+        [
+          "ImgSobelFunc.B1.start"
+        ]
+      }
+    }
+    , "ImgSobelIntel":
+    {
+      "debug":
+      [
+        {
+          "filename":"./include/img_filter_base_intel.h"
+          , "line":10
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "ImgSobelIntel__no_loop":
+        [
+          "ImgSobelIntel.B0.runOnce"
+        ]
+        , "ImgSobelIntel.B1.start":
+        [
+          "ImgSobelIntel.B1.start"
+          , "ImgSobelIntel.B2"
+          , "ImgSobelIntel.B5"
+        ]
+        , "ImgSobelIntel.B2":
+        [
+          "ImgSobelIntel.B2"
+          , "ImgSobelIntel.B4"
+          , "ImgSobelIntel.B3"
+        ]
+        , "ImgSobelIntel.B4":
+        [
+          "ImgSobelIntel.B4"
+        ]
+      }
+    }
+    , "vxReadDram":
+    {
+      "debug":
+      [
+        {
+          "filename":"./include/link_OpenCLIntel.h"
+          , "line":20
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "vxReadDram__no_loop":
+        [
+          "vxReadDram.B0.runOnce"
+        ]
+        , "vxReadDram.B1.start":
+        [
+          "vxReadDram.B1.start"
+          , "vxReadDram.B2"
+          , "vxReadDram.B3"
+        ]
+        , "vxReadDram.B2":
+        [
+          "vxReadDram.B2"
+          , "vxReadDram.B5"
+          , "vxReadDram.B4"
+        ]
+        , "vxReadDram.B5":
+        [
+          "vxReadDram.B5"
+        ]
+      }
+    }
+    , "vxWriteDram":
+    {
+      "debug":
+      [
+        {
+          "filename":"./include/link_OpenCLIntel.h"
+          , "line":68
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "vxWriteDram__no_loop":
+        [
+          "vxWriteDram.B0.runOnce"
+        ]
+        , "vxWriteDram.B1.start":
+        [
+          "vxWriteDram.B1.start"
+          , "vxWriteDram.B2"
+          , "vxWriteDram.B3"
+        ]
+        , "vxWriteDram.B2":
+        [
+          "vxWriteDram.B2"
+          , "vxWriteDram.B5"
+          , "vxWriteDram.B4"
+        ]
+        , "vxWriteDram.B5":
+        [
+          "vxWriteDram.B5"
+        ]
+      }
+    }
+    , "vxWriteDram_1":
+    {
+      "debug":
+      [
+        {
+          "filename":"./include/link_OpenCLIntel.h"
+          , "line":68
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "vxWriteDram_1__no_loop":
+        [
+          "vxWriteDram_1.B0.runOnce"
+        ]
+        , "vxWriteDram_1.B1.start":
+        [
+          "vxWriteDram_1.B1.start"
+          , "vxWriteDram_1.B2"
+          , "vxWriteDram_1.B3"
+        ]
+        , "vxWriteDram_1.B2":
+        [
+          "vxWriteDram_1.B2"
+          , "vxWriteDram_1.B5"
+          , "vxWriteDram_1.B4"
+        ]
+        , "vxWriteDram_1.B5":
+        [
+          "vxWriteDram_1.B5"
+        ]
+      }
+    }
+  }
+}

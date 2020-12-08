@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"prefixSum"
+      , "id":2463517096
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"prefixSum.B0"
+          , "id":2463515360
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":2466660016
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"prefixSum.B1"
+          , "id":2463515440
+          , "type":"bb"
+        }
+        , {
+          "name":"prefixSum.B2"
+          , "id":2463515520
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":2466940416
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":2467344016
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

@@ -1,0 +1,2421 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: Histogram_in"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"1-1_ul32_1c_depth16.cl"
+            , "line":15
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Histogram_in.B2"
+          , "data":
+          ["Yes", "~1", "8"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"1-1_ul32_1c_depth16.cl"
+                , "line":19
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L, %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"21"
+                    }
+                    , {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"22"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Channel Write Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"23"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Channel Write Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"24"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#wfa1476380079940"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: Histogram_0"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"1-1_ul32_1c_depth16.cl"
+            , "line":30
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Single work-item execution"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Histogram_0.B2"
+          , "data":
+          ["Yes", "1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"1-1_ul32_1c_depth16.cl"
+                , "line":65
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: None"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#wfa1476380079940"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"Histogram_0.B4"
+          , "data":
+          ["Yes", "~2", "2"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"1-1_ul32_1c_depth16.cl"
+                , "line":101
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Memory dependency"
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"137"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"137"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"138"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"138"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"139"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"139"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"140"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"140"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"141"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"141"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"142"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"142"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"143"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"143"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"144"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"144"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"145"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"145"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"146"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"146"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"147"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"147"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"148"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"148"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"149"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"149"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"150"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"150"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"151"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"151"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"152"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"152"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"153"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"153"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"154"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"154"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"155"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"155"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"156"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"156"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"157"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"157"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"158"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"158"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"159"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"159"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"160"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"160"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"161"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"161"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"162"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"162"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"163"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"163"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"164"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"164"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"165"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"165"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"166"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"166"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"167"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"167"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Compiler failed to schedule this loop with smaller II due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"168"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"168"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Most critical loop feedback path during scheduling:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Number of nodes in critical path exceeded what the compiler has captured. Only the top 20 failing nodes are listed."
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"166"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"159"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"161"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"168"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"141"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"158"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"162"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"160"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"163"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"164"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"167"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"154"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"144"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"150"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"142"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"138"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"153"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"156"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"147"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"140"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"165"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"151"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"157"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"139"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"146"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"152"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"145"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"137"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"155"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"143"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"149"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.44 clock cycle 32-bit Integer Add Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"148"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"163"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"147"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"145"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"153"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"153"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"150"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"138"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"147"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"140"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"142"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"145"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"165"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"161"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"167"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"163"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"157"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"143"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"161"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"166"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"151"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"149"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"157"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"168"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"159"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"143"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"162"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"158"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"168"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"164"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"166"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"139"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"137"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"148"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"159"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"156"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"154"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"144"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"146"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"152"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"155"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"139"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"148"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"137"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"164"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"156"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"140"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"149"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"138"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"151"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"141"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"146"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"144"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"154"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"165"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"152"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"160"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"150"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"162"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"158"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"141"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"142"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"167"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Load Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"160"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"1.00 clock cycle Store Operation (%L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"1-1_ul32_1c_depth16.cl"
+                          , "line":"155"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Channel Read Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"103"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Channel Read Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"104"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#wfa1476380079940"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+        , {
+          "name":"Histogram_0.B6"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"1-1_ul32_1c_depth16.cl"
+                , "line":171
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Load Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"172"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Store Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"1-1_ul32_1c_depth16.cl"
+                      , "line":"172"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Best Practices Guide : Loops in a Single Work-Item Kernel"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#wfa1476380079940"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

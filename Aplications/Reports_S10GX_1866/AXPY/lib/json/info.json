@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["axpy_GX"],"name":"Project Name"},
+{"data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"],"name":"Target Family, Device, Board"},
+{"data":["19.3.0 Build 222"],"name":"AOC Version"},
+{"data":["19.3.0 Build 222 Pro"],"name":"Quartus Version"},
+{"data":["aoc -profile=all -board-package=/opt/intelFPGA_pro/BSPs/s10_ref axpy.cl -o axpy_GX.aocx"],"name":"Command"},
+{"data":["Wed Oct 14 14:10:22 2020"],"name":"Reports Generated At"}
+]}

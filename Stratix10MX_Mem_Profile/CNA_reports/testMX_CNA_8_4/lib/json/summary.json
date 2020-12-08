@@ -1,0 +1,272 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units", "Hyper-Optimized Handshaking"]
+    , "children":
+    [
+      {
+        "name":"test_multiplereads"
+        , "data":
+        [
+          "NDRange"
+          , "No"
+          , [4096, 1, 1]
+          , 1
+          , "On"
+        ]
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Kernel type: NDRange"
+          }
+          , {
+            "type":"text"
+            , "text":"Required workgroup size: (4096, 1, 1)"
+          }
+          , {
+            "type":"text"
+            , "text":"Maximum workgroup size: 4096"
+          }
+          , {
+            "type":"text"
+            , "text":"The kernel does not use any work-group information (such as get_local_id() or get_group_id()).Local work-group size will be automatically modified to match global work-group size on launch.This is a hardware optimization."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":16
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs ", "MLABs"]
+    , "children":
+    [
+      {
+        "name":"test_multiplereads"
+        , "data":
+        [17568, 39730, 153, 72, 166]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":16
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Global Interconnect"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [5904, 6443, 0, 0, 0]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [13132, 20030, 112, 0, 0]
+      }
+      , {
+        "name":"System description ROM"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [2, 71, 2, 0, 0]
+      }
+      , {
+        "name":"Total"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [36606, 66274, 267, 72, 166]
+        , "data_percent":
+        [2.60459, 2.35777, 3.89952, 1.81818]
+      }
+      , {
+        "name":"Available"
+        , "classes":
+        ["summary-highlight", "nohover"]
+        , "data":
+        [1405440, 2810880, 6847, 3960, 0]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "children":
+    [
+      {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":89
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":90
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":91
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":93
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":94
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":95
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":97
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":98
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":99
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":101
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":102
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":103
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Store uses a Burst-coalesced non-aligned LSU"
+        , "details":
+        [
+          {
+            "type":"text"
+            , "text":"Use Dynamic Profiler to determine performance impact of this LSU."
+          }
+        ]
+        , "debug":
+        [
+          [
+            {
+              "filename":"test_CNA.cl"
+              , "line":105
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":106
+            }
+          ]
+          , [
+            {
+              "filename":"test_CNA.cl"
+              , "line":107
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

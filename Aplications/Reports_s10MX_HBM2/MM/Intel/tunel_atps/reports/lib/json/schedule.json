@@ -1,0 +1,5328 @@
+{
+  "759688504":
+  {
+    "nodes":
+    [
+      {
+        "name":"matrixMult.B0"
+        , "id":759911648
+        , "start":"0"
+        , "end":"14"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 0"
+            , "id":774841296
+            , "start":"1"
+            , "end":"14"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_entry_matrixmults_c0_enter_matrixmult1"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"13"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Ptr. Comp."
+                , "id":931320304
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":930738592
+                , "start":"1"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"6 (0x6)"
+                    , "Start Cycle":"1"
+                    , "Latency":"9"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":126
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":815903968
+                , "start":"1"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"4 (0x4)"
+                    , "Start Cycle":"1"
+                    , "Latency":"5"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":933346688
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931309680
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930742576
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"12 (0xC)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":962200608
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931380672
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930742240
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"11 (0xB)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":947932672
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931408832
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930735584
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"6 (0x6)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":949859040
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931473056
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930735248
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"5 (0x5)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":949369312
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":928530128
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930721280
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":932922272
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931373232
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930720944
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"13 (0xD)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":932906352
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931420128
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930717632
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"8 (0x8)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":949912864
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":930569856
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930717296
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"7 (0x7)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":960900096
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931239072
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930706640
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"15 (0xF)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":932899040
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931352064
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930703328
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"4 (0x4)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":950969824
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":928561552
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930702992
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"3 (0x3)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931344944
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":928600672
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930699984
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"10 (0xA)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":947937136
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931444432
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930699648
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"9 (0x9)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":930581328
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":878311872
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930689024
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"2 (0x2)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":930568032
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":928569072
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":930688688
+                , "start":"6"
+                , "end":"6"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Or"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"6"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":931288384
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":928558416
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":930640048
+                , "start":"6"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"6"
+                    , "Latency":"4"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":140
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"A_width"
+                , "id":930600464
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'A_width'"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"*"
+                , "id":930618544
+                , "start":"2"
+                , "end":"9"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Multiply"
+                    , "Start Cycle":"2"
+                    , "Latency":"7"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":140
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":929812176
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":140
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"A_width"
+                , "id":930667392
+                , "start":"0"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'A_width'"
+                    , "Start Cycle":"0"
+                    , "Latency":"10"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":930657392
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":132
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Xor"
+                , "id":932677520
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Xor"
+                    , "Constant Operand":"1 (0x1)"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"A_width"
+                , "id":930706976
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'A_width'"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":930696128
+                , "start":"2"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"6 (0x6)"
+                    , "Start Cycle":"2"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":124
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"*"
+                , "id":930713952
+                , "start":"2"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Multiply"
+                    , "Start Cycle":"2"
+                    , "Latency":"8"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":124
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"A_width"
+                , "id":930714288
+                , "start":"0"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'A_width'"
+                    , "Start Cycle":"0"
+                    , "Latency":"10"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":930671376
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":125
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"B_width"
+                , "id":931312992
+                , "start":"0"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'B_width'"
+                    , "Start Cycle":"0"
+                    , "Latency":"10"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":931302480
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"6 (0x6)"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":132
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"B_width"
+                , "id":932634928
+                , "start":"0"
+                , "end":"2"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'B_width'"
+                    , "Start Cycle":"0"
+                    , "Latency":"2"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"*"
+                , "id":928586816
+                , "start":"2"
+                , "end":"9"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Multiply"
+                    , "Start Cycle":"2"
+                    , "Latency":"7"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":928558080
+                , "start":"10"
+                , "end":"10"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"10"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":777798768
+                , "start":"10"
+                , "end":"14"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"10"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"16"
+                    , "Exit FIFO Width":"2496"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+        ]
+      }
+      , {
+        "name":"matrixMult.B2"
+        , "id":759912112
+        , "start":"14"
+        , "end":"853"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"wg.limiter.enter"
+            , "id":960183056
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":948321360
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":872106208
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 5"
+            , "id":777284752
+            , "start":"554"
+            , "end":"560"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c2_in_for_body_matrixmults_c2_enter_matrixmult26"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"540"
+                , "Cluster Latency":"6"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"+"
+                , "id":937275872
+                , "start":"554"
+                , "end":"554"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Constant Operand":"64 (0x40)"
+                    , "Start Cycle":"540"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":132
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Compare"
+                , "id":937750464
+                , "start":"555"
+                , "end":"556"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Compare"
+                    , "Start Cycle":"541"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":132
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":937750800
+                , "start":"556"
+                , "end":"556"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Start Cycle":"542"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":869257696
+                , "start":"556"
+                , "end":"560"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"542"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"8"
+                    , "Exit FIFO Width":"96"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":863294912
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":851761584
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":842891248
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":833988800
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 4"
+            , "id":777250112
+            , "start":"15"
+            , "end":"19"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_for_body_matrixmults_c1_enter2201_matrixmult23"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"4"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"+"
+                , "id":937815568
+                , "start":"15"
+                , "end":"15"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":132
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":869291856
+                , "start":"15"
+                , "end":"19"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"1"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"8"
+                    , "Exit FIFO Width":"64"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 3"
+            , "id":777156400
+            , "start":"15"
+            , "end":"23"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_for_body_matrixmults_c0_enter218972_matrixmult20"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"1"
+                , "Cluster Latency":"8"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"+"
+                , "id":950876128
+                , "start":"15"
+                , "end":"15"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":938132288
+                , "start":"15"
+                , "end":"15"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Integer Add"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":140
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"B"
+                , "id":937775136
+                , "start":"14"
+                , "end":"19"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'B'"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":945735312
+                , "start":"16"
+                , "end":"19"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"2"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"A"
+                , "id":937836560
+                , "start":"14"
+                , "end":"19"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'A'"
+                    , "Start Cycle":"0"
+                    , "Latency":"5"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":954055424
+                , "start":"16"
+                , "end":"19"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"2"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":140
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":951319008
+                , "start":"19"
+                , "end":"23"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"5"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"16"
+                    , "Exit FIFO Width":"192"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"LD"
+            , "id":793402752
+            , "start":"23"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"512 bits"
+                , "LSU Style":"Burst-coalesced non-aligned cached"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"9"
+                , "Latency":"266"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"LD"
+            , "id":788908128
+            , "start":"23"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Load"
+                , "Width":"512 bits"
+                , "LSU Style":"Burst-coalesced non-aligned cached"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"9"
+                , "Latency":"266"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":140
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":833914176
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":824810928
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":820306368
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":816015648
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":811436272
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":811389632
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":140
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":798031424
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":784564288
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":784505472
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"wg.limiter.enter"
+            , "id":777745472
+            , "start":"288"
+            , "end":"289"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"wg.limiter.enter"
+                , "Start Cycle":"274"
+                , "Latency":"1"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":141
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 6"
+            , "id":777575040
+            , "start":"289"
+            , "end":"296"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c4_in_for_body_matrixmults_c4_enter_matrixmult31"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"275"
+                , "Cluster Latency":"7"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":954447328
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":961131792
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":950435888
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":962136096
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":949920768
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":948584240
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":948589840
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":928065856
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":945640992
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":948896080
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":944136816
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":948082576
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":943941488
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":934536144
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":937664064
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":944390256
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"512 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":140
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":934469856
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":934419312
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":933866544
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":935154976
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":933518784
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":933539744
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":933356592
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":934315264
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":932686176
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":933575680
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":929497920
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":949068592
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":928200928
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":885113568
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":928119792
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":955388336
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":928040384
+                , "start":"289"
+                , "end":"289"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Left Shift"
+                    , "Constant Operand":"14 (0xE)"
+                    , "Start Cycle":"275"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"ST"
+                , "id":928007440
+                , "start":"290"
+                , "end":"291"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Store"
+                    , "Width":"32 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"276"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":141
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":933433264
+                , "start":"292"
+                , "end":"292"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Start Cycle":"278"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":144
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":869094544
+                , "start":"292"
+                , "end":"296"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"278"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"8"
+                    , "Exit FIFO Width":"1216"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"simple.barrier"
+            , "id":820446032
+            , "start":"296"
+            , "end":"554"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"simple.barrier"
+                , "Start Cycle":"282"
+                , "Latency":"258"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":144
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+          , {
+            "name":"Cluster 7"
+            , "id":777576608
+            , "start":"554"
+            , "end":"595"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c3_in_for_body_matrixmults_c3_enter_matrixmult35"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"540"
+                , "Cluster Latency":"41"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"wg.limiter.exit"
+                , "id":1061614016
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":977582448
+                , "start":"555"
+                , "end":"560"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"541"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":962015920
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":859537968
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":949022160
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":901333600
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":933005632
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":858497696
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":927825504
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":941043168
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":927775264
+                , "start":"559"
+                , "end":"560"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"545"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":871197808
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":870909872
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":777652368
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":870899568
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":870572704
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":870563664
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":780023184
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":870337696
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":870334880
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":979543920
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":870050560
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":870046272
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":890589968
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869885664
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":869882720
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":793253520
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869731040
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":869728960
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":929632672
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869562464
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":869560256
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":869068848
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869410048
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":869406704
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":961846160
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869260944
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":869256928
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":872340928
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869086880
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":869073600
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":869059952
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":775353920
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":868893952
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":868890272
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":900769280
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":868770416
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"LD"
+                , "id":868764528
+                , "start":"556"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Load"
+                    , "Width":"2048 bits"
+                    , "LSU Style":"Pipelined never-stall"
+                    , "Stall-free":"Yes"
+                    , "Global Memory":"No"
+                    , "Start Cycle":"542"
+                    , "Latency":"5"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Hard Dot-64"
+                , "id":811349040
+                , "start":"561"
+                , "end":"591"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Hardened Dot Product of Size 64"
+                    , "Start Cycle":"547"
+                    , "Latency":"30"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Or"
+                , "id":782949344
+                , "start":"567"
+                , "end":"568"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"1-bit Or"
+                    , "Start Cycle":"553"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":161
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"wg.limiter.exit"
+                , "id":862938112
+                , "start":"560"
+                , "end":"561"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"wg.limiter.exit"
+                    , "Start Cycle":"546"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":929479024
+                , "start":"591"
+                , "end":"595"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"577"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"64"
+                    , "Exit FIFO Width":"576"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"simple.barrier"
+            , "id":838330560
+            , "start":"595"
+            , "end":"853"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"simple.barrier"
+                , "Start Cycle":"581"
+                , "Latency":"258"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":161
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+      , {
+        "name":"matrixMult.B1"
+        , "id":759691728
+        , "start":"853"
+        , "end":"877"
+        , "details":
+        [
+          {
+            "type":"table"
+          }
+        ]
+        , "type":"bb"
+        , "children":
+        [
+          {
+            "name":"Cluster 2"
+            , "id":776042224
+            , "start":"853"
+            , "end":"875"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c0_in_for_cond_cleanup_loopexit_matrixmults_c0_enter2179_matrixmult21"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"22"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"<<"
+                , "id":951224480
+                , "start":"853"
+                , "end":"867"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Left Shift"
+                    , "Constant Operand":"4 (0x4)"
+                    , "Start Cycle":"0"
+                    , "Latency":"14"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"C"
+                , "id":948837088
+                , "start":"853"
+                , "end":"871"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for 'C'"
+                    , "Start Cycle":"0"
+                    , "Latency":"18"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"__acl_global_size_0"
+                , "id":951270688
+                , "start":"853"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Input Synchronization for '__acl_global_size_0'"
+                    , "Start Cycle":"0"
+                    , "Latency":"1"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"<<"
+                , "id":951187456
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Left Shift"
+                    , "Constant Operand":"4 (0x4)"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"*"
+                , "id":951224144
+                , "start":"854"
+                , "end":"867"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Multiply"
+                    , "Start Cycle":"1"
+                    , "Latency":"13"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":165
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"+"
+                , "id":948836752
+                , "start":"867"
+                , "end":"868"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"64-bit Integer Add"
+                    , "Start Cycle":"14"
+                    , "Latency":"1"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":165
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Ptr. Comp."
+                , "id":949699920
+                , "start":"868"
+                , "end":"871"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"Pointer Computation"
+                    , "Start Cycle":"15"
+                    , "Latency":"3"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":165
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":824848240
+                , "start":"871"
+                , "end":"875"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"18"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"32"
+                    , "Exit FIFO Width":"128"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"Cluster 1"
+            , "id":775941792
+            , "start":"853"
+            , "end":"858"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Cluster Name":"i_sfc_s_c1_in_for_cond_cleanup_loopexit_matrixmults_c1_enter_matrixmult17"
+                , "Cluster Type":"Stall-Free"
+                , "Cluster Start Cycle":"0"
+                , "Cluster Latency":"5"
+              }
+            ]
+            , "type":"cluster"
+            , "children":
+            [
+              {
+                "name":"Select"
+                , "id":947691616
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":947691280
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":947531584
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":947531248
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":945848512
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":945848176
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":938763312
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":938762976
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":938196512
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":938196176
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":938057776
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":938057440
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":937038576
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":937038240
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":936517408
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Select"
+                , "id":936517072
+                , "start":"854"
+                , "end":"854"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Instruction":"32-bit Select"
+                    , "Start Cycle":"1"
+                    , "Latency":"0"
+                  }
+                ]
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"matrix_mult.cl"
+                      , "line":156
+                    }
+                  ]
+                ]
+                , "type":"inst"
+              }
+              , {
+                "name":"Exit"
+                , "id":778190064
+                , "start":"854"
+                , "end":"858"
+                , "details":
+                [
+                  {
+                    "type":"table"
+                    , "Exit Start Cycle":"1"
+                    , "Exit Latency":"4"
+                    , "Exit FIFO Depth":"8"
+                    , "Exit FIFO Width":"520"
+                    , "Details":"Exit FIFO depth is sized to accommodate all data that may be in-flight in the stall-free cluster; this depth will be equal to or greater than the latency of the cluster.  The width of the FIFO depends on the amount of data that needs to pass from the stall-free logic cluster to the stall-able logic below it."
+                  }
+                ]
+                , "type":"inst"
+              }
+            ]
+          }
+          , {
+            "name":"ST"
+            , "id":948838576
+            , "start":"875"
+            , "end":"877"
+            , "details":
+            [
+              {
+                "type":"table"
+                , "Instruction":"Store"
+                , "Width":"512 bits"
+                , "LSU Style":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Global Memory":"Yes"
+                , "Start Cycle":"22"
+                , "Latency":"2"
+              }
+            ]
+            , "debug":
+            [
+              [
+                {
+                  "filename":"matrix_mult.cl"
+                  , "line":165
+                }
+              ]
+            ]
+            , "type":"inst"
+          }
+        ]
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+}

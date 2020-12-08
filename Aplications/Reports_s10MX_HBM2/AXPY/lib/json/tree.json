@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"sreaming_saxpy"
+      , "id":3328050744
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"sreaming_saxpy.B0"
+          , "id":3328083168
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3332762848
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"sreaming_saxpy.B1"
+          , "id":3328066048
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":3333879744
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":3332941872
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"sreaming_saxpy.B2"
+          , "id":3328066128
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"apply_watermark"
+      , "id":2767983624
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"apply_watermark.B2"
+          , "id":2767985472
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":2774687024
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":2774691312
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"apply_watermark.B1"
+          , "id":2768155328
+          , "type":"bb"
+        }
+        , {
+          "name":"apply_watermark.B0"
+          , "id":2768210368
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":2774403952
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

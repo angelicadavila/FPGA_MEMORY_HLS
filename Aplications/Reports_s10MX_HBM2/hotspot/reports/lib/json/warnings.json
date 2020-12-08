@@ -1,0 +1,6 @@
+{"rows":[
+{"debug":[[{"filename":"/home/angelica/exm_MX/hotspot/hotspot_kernel_v5_MX.cl"
+,"line":75}]]
+,"details":["/home/angelica/exm_MX/hotspot/hotspot_kernel_v5_MX.cl:75:9: warning: variable 'local_pwr' is used uninitialized whenever 'if' condition is false"]
+,"name":"variable 'local_pwr' is used uninitialized whenever 'if' condition is false"}
+]}

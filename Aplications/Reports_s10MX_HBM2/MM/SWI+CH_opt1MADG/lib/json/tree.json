@@ -1,0 +1,184 @@
+{
+  "nodes":
+  [
+    {
+      "name":"in"
+      , "id":3329134184
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"in.B2"
+          , "id":3329131840
+          , "type":"bb"
+        }
+        , {
+          "name":"in.B4"
+          , "id":3329132000
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":3334262032
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"in.B1"
+          , "id":3329303168
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":3333822112
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"in.B3"
+          , "id":3329131920
+          , "type":"bb"
+        }
+        , {
+          "name":"in.B0"
+          , "id":3329303024
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3332932592
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"matrixMult"
+      , "id":3329288872
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"matrixMult.B7"
+          , "id":3329433408
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 9"
+              , "id":3344797200
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 10"
+              , "id":3345557200
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"matrixMult.B2"
+          , "id":3329433008
+          , "type":"bb"
+        }
+        , {
+          "name":"matrixMult.B1"
+          , "id":3329428832
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":3343127872
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"matrixMult.B4"
+          , "id":3329433168
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 6"
+              , "id":3343637824
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 7"
+              , "id":3343995936
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"matrixMult.B8"
+          , "id":3329433488
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 11"
+              , "id":3346133040
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"matrixMult.B6"
+          , "id":3329433328
+          , "type":"bb"
+        }
+        , {
+          "name":"matrixMult.B5"
+          , "id":3329433248
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 8"
+              , "id":3344178880
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"matrixMult.B3"
+          , "id":3329433088
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 5"
+              , "id":3343491920
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"matrixMult.B0"
+          , "id":3329429056
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":3332577904
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

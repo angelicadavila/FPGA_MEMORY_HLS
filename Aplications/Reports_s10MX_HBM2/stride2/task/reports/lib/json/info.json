@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["testCA_2_0_V8_MX"],"name":"Project Name"},
+{"data":["Stratix 10, 1SM21BHU2F53E2VGS1, s10mx_ref:s10mx_hbm_es"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":["19.4.0 Build 64 Pro"],"name":"Quartus Version"},
+{"data":["aoc -profile=all -report -v -D INPUTS=0 -D delta=2 test_bw10_delta.cl -board=s10mx_hbm_es -board-package=/home/angelica/Quartus/s10mx_ref -o device/testCA_2_0_V8_MX.aocx"],"name":"Command"},
+{"data":["Sat Sep 12 18:50:12 2020"],"name":"Reports Generated At"}
+]}

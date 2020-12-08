@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"dynproc_kernel"
+      , "id":1411184440
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"dynproc_kernel.B0"
+          , "id":1411356112
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":1420157072
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"dynproc_kernel.B2"
+          , "id":1411186096
+          , "type":"bb"
+        }
+        , {
+          "name":"dynproc_kernel.B1"
+          , "id":1411368384
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":1420363520
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":1422734944
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

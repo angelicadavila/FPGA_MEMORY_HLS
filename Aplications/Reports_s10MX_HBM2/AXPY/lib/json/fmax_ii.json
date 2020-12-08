@@ -1,0 +1,95 @@
+{
+  "basicblocks":
+  {
+    "sreaming_saxpy.B0":
+    {
+      "name":"sreaming_saxpy.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":36
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "sreaming_saxpy.B1":
+    {
+      "name":"sreaming_saxpy.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":653
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"axpy.cl"
+                , "line":"34"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "sreaming_saxpy.B2":
+    {
+      "name":"sreaming_saxpy.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "sreaming_saxpy":
+    {
+      "debug":
+      [
+        {
+          "filename":"axpy.cl"
+          , "line":23
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "sreaming_saxpy__no_loop":
+        [
+          "sreaming_saxpy.B0"
+          , "sreaming_saxpy.B2"
+        ]
+        , "sreaming_saxpy.B1":
+        [
+          "sreaming_saxpy.B1"
+        ]
+      }
+    }
+  }
+}

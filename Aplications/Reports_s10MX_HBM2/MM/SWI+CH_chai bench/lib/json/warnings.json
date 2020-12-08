@@ -1,0 +1,6 @@
+{"rows":[
+{"debug":[[{"filename":"t1-1_ul8.cl"
+,"line":17}]]
+,"details":["Compiler Warning: t1-1_ul8.cl:17: declaring global argument 'B' with no 'restrict' may lead to low performance for kernel 'matrixMult'"]
+,"name":"t1-1_ul8.cl:17: declaring global argument 'B' with no 'restrict' may lead to low performance for kernel 'matrixMult'"}
+]}

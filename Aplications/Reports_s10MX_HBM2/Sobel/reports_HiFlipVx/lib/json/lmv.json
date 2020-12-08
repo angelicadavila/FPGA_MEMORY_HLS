@@ -1,0 +1,1018 @@
+{
+  "nodes":
+  [
+    {
+      "type":"component"
+      , "id":28
+      , "name":"ImgSobelIntel"
+      , "children":
+      [
+        {
+          "type":"inst"
+          , "id":39
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":69
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"linebuffer"
+              , "Start Cycle":"12"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":40
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":69
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"linebuffer"
+              , "Start Cycle":"12"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":41
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":69
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"linebuffer"
+              , "Start Cycle":"12"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":42
+          , "name":"Load"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":69
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Loads from":"linebuffer"
+              , "Start Cycle":"12"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":43
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":169
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"linebuffer"
+              , "Start Cycle":"57"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":44
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":169
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"linebuffer"
+              , "Start Cycle":"57"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":45
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":169
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"linebuffer"
+              , "Start Cycle":"57"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"inst"
+          , "id":46
+          , "name":"Store"
+          , "debug":
+          [
+            [
+              {
+                "filename":"./include/img_filter_core.h"
+                , "line":169
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Width":"32 bits"
+              , "Type":"Pipelined"
+              , "Stall-free":"No"
+              , "Stores to":"linebuffer"
+              , "Start Cycle":"57"
+              , "Latency":"31"
+              , "Reference":
+              [
+                {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"memtype"
+          , "id":59
+          , "name":"Local Memory"
+          , "children":
+          [
+            {
+              "type":"memsys"
+              , "id":60
+              , "name":"linebuffer"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"./include/img_filter_core.h"
+                    , "line":1874
+                  }
+                ]
+              ]
+              , "children":
+              [
+                {
+                  "type":"bank"
+                  , "id":61
+                  , "name":"Bank 0"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/img_filter_core.h"
+                        , "line":1874
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":65
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":67
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":62
+                  , "name":"Bank 1"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/img_filter_core.h"
+                        , "line":1874
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":69
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":75
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":63
+                  , "name":"Bank 2"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/img_filter_core.h"
+                        , "line":1874
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":71
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":77
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+                , {
+                  "type":"bank"
+                  , "id":64
+                  , "name":"Bank 3"
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/img_filter_core.h"
+                        , "line":1874
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "type":"port"
+                      , "id":73
+                      , "name":"RW"
+                    }
+                    , {
+                      "type":"port"
+                      , "id":79
+                      , "name":"RW"
+                    }
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"2 total ports/bank\n0 read ports/bank\n0 write ports/bank"
+                        }
+                      ]
+                      , "Total number of ports per bank":"2"
+                      , "Number of read ports per bank":"0"
+                      , "Number of write ports per bank":"0"
+                      , "Number of shared ports per bank":"2"
+                      , "Total replication":"1"
+                    }
+                  ]
+                }
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"7680B requested\n8192B implemented"
+                    }
+                  ]
+                  , "Requested size":"7680 bytes"
+                  , "Implemented size":"8192 bytes"
+                  , "Number of banks":"4"
+                  , "Bank width":"32 bits"
+                  , "Bank depth":"512 words"
+                  , "Total replication":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Reference Manual : Local Variables in Components"
+                          , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#xzx1468871996419"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":66
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":68
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":70
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":72
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":74
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":76
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":78
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+        , {
+          "type":"arb"
+          , "id":80
+          , "name":"ARB"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Additional Information":"Competing accesses leading to stalls"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":25
+      , "name":"InputImg"
+      , "debug":
+      [
+        [
+          {
+            "filename":"./graph_test/sobel.h"
+            , "line":30
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"512"
+          , "Address width":"32"
+          , "Address Space":"1"
+          , "Latency":"0"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"16"
+          , "Wait request":"1"
+          , "Alignment":"64"
+          , "Component":"ImgSobelFunc"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":26
+      , "name":"OutputImg"
+      , "debug":
+      [
+        [
+          {
+            "filename":"./graph_test/sobel.h"
+            , "line":30
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"512"
+          , "Address width":"32"
+          , "Address Space":"2"
+          , "Latency":"0"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"16"
+          , "Wait request":"1"
+          , "Alignment":"64"
+          , "Component":"ImgSobelFunc"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":27
+      , "name":"OutputImg1"
+      , "debug":
+      [
+        [
+          {
+            "filename":"./graph_test/sobel.h"
+            , "line":30
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"512"
+          , "Address width":"32"
+          , "Address Space":"3"
+          , "Latency":"0"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"16"
+          , "Wait request":"1"
+          , "Alignment":"64"
+          , "Component":"ImgSobelFunc"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":103
+      , "name":"dram_in"
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/link_OpenCLIntel.h"
+            , "line":20
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"512"
+          , "Address width":"32"
+          , "Address Space":"1"
+          , "Latency":"0"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"16"
+          , "Wait request":"1"
+          , "Alignment":"64"
+          , "Component":"vxReadDram"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":127
+      , "name":"dram_out"
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/link_OpenCLIntel.h"
+            , "line":68
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"512"
+          , "Address width":"32"
+          , "Address Space":"3"
+          , "Latency":"0"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"16"
+          , "Wait request":"1"
+          , "Alignment":"64"
+          , "Component":"vxWriteDram"
+        }
+      ]
+    }
+    , {
+      "type":"interface"
+      , "id":151
+      , "name":"dram_out"
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/link_OpenCLIntel.h"
+            , "line":68
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Stable":"No"
+          , "Data width":"512"
+          , "Address width":"32"
+          , "Address Space":"2"
+          , "Latency":"0"
+          , "ReadWrite Mode":"readwrite"
+          , "Maximum burst":"16"
+          , "Wait request":"1"
+          , "Alignment":"64"
+          , "Component":"vxWriteDram_1"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":66
+      , "to":39
+    }
+    , {
+      "from":66
+      , "to":41
+    }
+    , {
+      "from":43
+      , "to":66
+    }
+    , {
+      "from":45
+      , "to":66
+    }
+    , {
+      "from":66
+      , "to":65
+    }
+    , {
+      "from":65
+      , "to":66
+    }
+    , {
+      "from":68
+      , "to":40
+    }
+    , {
+      "from":68
+      , "to":42
+    }
+    , {
+      "from":44
+      , "to":68
+    }
+    , {
+      "from":46
+      , "to":68
+    }
+    , {
+      "from":68
+      , "to":67
+    }
+    , {
+      "from":67
+      , "to":68
+    }
+    , {
+      "from":70
+      , "to":40
+    }
+    , {
+      "from":70
+      , "to":42
+    }
+    , {
+      "from":45
+      , "to":70
+    }
+    , {
+      "from":70
+      , "to":69
+    }
+    , {
+      "from":69
+      , "to":70
+    }
+    , {
+      "from":72
+      , "to":40
+    }
+    , {
+      "from":72
+      , "to":42
+    }
+    , {
+      "from":45
+      , "to":72
+    }
+    , {
+      "from":72
+      , "to":71
+    }
+    , {
+      "from":71
+      , "to":72
+    }
+    , {
+      "from":74
+      , "to":40
+    }
+    , {
+      "from":74
+      , "to":42
+    }
+    , {
+      "from":45
+      , "to":74
+    }
+    , {
+      "from":74
+      , "to":73
+    }
+    , {
+      "from":73
+      , "to":74
+    }
+    , {
+      "from":76
+      , "to":41
+    }
+    , {
+      "from":44
+      , "to":76
+    }
+    , {
+      "from":46
+      , "to":76
+    }
+    , {
+      "from":76
+      , "to":75
+    }
+    , {
+      "from":75
+      , "to":76
+    }
+    , {
+      "from":78
+      , "to":41
+    }
+    , {
+      "from":44
+      , "to":78
+    }
+    , {
+      "from":46
+      , "to":78
+    }
+    , {
+      "from":78
+      , "to":77
+    }
+    , {
+      "from":77
+      , "to":78
+    }
+    , {
+      "from":80
+      , "to":41
+    }
+    , {
+      "from":44
+      , "to":80
+    }
+    , {
+      "from":46
+      , "to":80
+    }
+    , {
+      "from":80
+      , "to":79
+    }
+    , {
+      "from":79
+      , "to":80
+    }
+  ]
+}

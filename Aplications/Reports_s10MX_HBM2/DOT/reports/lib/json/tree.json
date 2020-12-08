@@ -1,0 +1,60 @@
+{
+  "nodes":
+  [
+    {
+      "name":"DotProduct"
+      , "id":230212056
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"DotProduct.B0"
+          , "id":230384848
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":234225408
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"DotProduct.B2"
+          , "id":230214000
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":236114640
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"DotProduct.B1"
+          , "id":230213920
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 1"
+              , "id":234438800
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":235364464
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

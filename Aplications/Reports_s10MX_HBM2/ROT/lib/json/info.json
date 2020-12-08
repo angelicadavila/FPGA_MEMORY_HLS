@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["rot_mx"],"name":"Project Name"},
+{"data":["Stratix 10, 1SM21BHU2F53E2VGS1, s10mx_ref:s10mx_hbm_es"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":["19.4.0 Build 64 Pro"],"name":"Quartus Version"},
+{"data":["aoc -v -v -board-package=/mnt/extra/Angelica/exm_binary/stratixMX/BSPMX/s10mx_ref rot_mx.cl"],"name":"Command"},
+{"data":["Mon Aug 24 14:35:27 2020"],"name":"Reports Generated At"}
+]}

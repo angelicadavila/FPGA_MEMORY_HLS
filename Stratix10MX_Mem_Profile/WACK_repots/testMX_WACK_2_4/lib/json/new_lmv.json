@@ -1,0 +1,195 @@
+{
+  "nodes":
+  [
+    {
+      "name":"test_random_access"
+      , "id":968580600
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"Unknown ROM (address space 6)"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Requested size":"8192 bytes"
+                  , "Implemented size":"8192 bytes"
+                  , "Number of banks":"1"
+                  , "Number of replicates":"2"
+                  , "Additional information":"ROM contents for 2 replicates were  pruned based on access pattern of the load site"
+                }
+              ]
+              , "type":"romsys"
+              , "children":
+              [
+                {
+                  "name":"Bank 0"
+                  , "id":3
+                  , "details":
+                  [
+                    {
+                      "type":"table"
+                      , "Bank width":"32 bits"
+                      , "Implemented size":"8192 bytes"
+                      , "Number of replicates":"2"
+                      , "Replicate ID(s) with pruned initializer":"0 and 1"
+                    }
+                  ]
+                  , "type":"bank"
+                  , "children":
+                  [
+                    {
+                      "name":"Replicate 0"
+                      , "id":4
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"1024 words"
+                          , "Size":"4096 bytes"
+                          , "Additional Information":"50 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":5
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Replicate 1"
+                      , "id":6
+                      , "details":
+                      [
+                        {
+                          "type":"table"
+                          , "Width":"32 bits"
+                          , "Depth":"1024 words"
+                          , "Size":"4096 bytes"
+                          , "Additional Information":"50 % of ROM contents were pruned away based on the access pattern of the load site."
+                        }
+                      ]
+                      , "type":"replicate"
+                      , "children":
+                      [
+                        {
+                          "name":"R"
+                          , "id":7
+                          , "type":"port"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"rand"
+              , "id":8
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"test_WACK.cl"
+                          , "line":"37"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"test_WACK.cl"
+                    , "line":37
+                  }
+                ]
+              ]
+              , "type":"unsynth"
+            }
+          ]
+        }
+        , {
+          "name":"Load"
+          , "id":968607032
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Load"
+          , "id":968701032
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Data width":"32 bits"
+              , "Type":"ROM lookup"
+              , "Loads from":"Unknown ROM (address space 6)"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"test_WACK.cl"
+                , "line":42
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":968607032
+      , "to":5
+    }
+    , {
+      "from":968701032
+      , "to":7
+    }
+  ]
+}

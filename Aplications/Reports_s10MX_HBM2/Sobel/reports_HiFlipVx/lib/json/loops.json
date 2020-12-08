@@ -1,0 +1,3493 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Speculated iterations", "Details"]
+  , "children":
+  [
+    {
+      "name":"Component: ImgSobelFunc"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"./graph_test/sobel.h"
+            , "line":30
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ImgSobelFunc.B1.start"
+          , "data":
+          ["Yes", "~1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"II is an approximation due to the following stallable instructions:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"30"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"39"
+                    }
+                    , {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"24"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"85"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"54"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"43"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"34"
+                    }
+                    , {
+                      "filename":"./include/link_OpenCLIntel.h"
+                      , "line":"144"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"85"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"54"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"43"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"42"
+                    }
+                    , {
+                      "filename":"./include/link_OpenCLIntel.h"
+                      , "line":"156"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"85"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"54"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"43"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"45"
+                    }
+                    , {
+                      "filename":"./include/link_OpenCLIntel.h"
+                      , "line":"156"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"85"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"54"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"43"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"47"
+                    }
+                    , {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"30"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"95"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"61"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"48"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"49"
+                    }
+                    , {
+                      "filename":"./include/link_OpenCLIntel.h"
+                      , "line":"159"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"95"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"61"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"48"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Read Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"50"
+                    }
+                    , {
+                      "filename":"./include/link_OpenCLIntel.h"
+                      , "line":"159"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"95"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/task.h"
+                      , "line":"61"
+                    }
+                    , {
+                      "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/internal/_task_FPGA.h"
+                      , "line":"48"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stream Write Operation (%L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./graph_test/sobel.h"
+                      , "line":"51"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: ImgSobelIntel"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/img_filter_base_intel.h"
+            , "line":10
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: ImgSobelIntel.B4"
+        }
+        , {
+          "type":"text"
+          , "text":"Use the %L report to view more details"
+          , "links":
+          [
+            {
+              "view":"Fmax II Report"
+            }
+          ]
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"ImgSobelIntel.B1.start"
+          , "data":
+          ["Yes", ">=1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Serial exe: Memory dependency"
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1935"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"169"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1935"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"169"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1935"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"169"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Iteration executed serially across ImgSobelIntel.B2. Only a single loop iteration will execute inside this region due to memory dependency:"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1935"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"169"
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                  , "links":
+                  [
+                    {
+                      "filename":"./include/img_filter_base_intel.h"
+                      , "line":"11"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2749"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"2215"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"1929"
+                    }
+                    , {
+                      "filename":"./include/img_filter_core.h"
+                      , "line":"69"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: Capacity of loop"
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Use the %L viewer to estimate capacity"
+                  , "links":
+                  [
+                    {
+                      "view":"Fmax II Report"
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"ImgSobelIntel.B2"
+              , "data":
+              ["Yes", ">=1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"./include/img_filter_core.h"
+                    , "line":1888
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Serial exe: Memory dependency"
+                }
+                , {
+                  "type":"text"
+                  , "text":"User-constrained II."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1935"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"169"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1935"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"169"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1935"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"169"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Iteration executed serially across ImgSobelIntel.B4. Only a single loop iteration will execute inside this region due to memory dependency:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"From: Store Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1935"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"169"
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"To: Load Operation (%L > %L > %L > %L > %L)"
+                      , "links":
+                      [
+                        {
+                          "filename":"./include/img_filter_base_intel.h"
+                          , "line":"11"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2749"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"2215"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"1929"
+                        }
+                        , {
+                          "filename":"./include/img_filter_core.h"
+                          , "line":"69"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: n/a"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual : Loops in Components"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"ImgSobelIntel.B4"
+                  , "data":
+                  ["Yes", "~1", "0"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/img_filter_core.h"
+                        , "line":1890
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":" "
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"II is an approximation due to the following stallable instructions:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Stream Read Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1918"
+                            }
+                            , {
+                              "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/hls.h"
+                              , "line":"1075"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1929"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"69"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1929"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"69"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1929"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"69"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1929"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"69"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1935"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"169"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1935"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"169"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1935"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"169"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1935"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"169"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stream Write Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1946"
+                            }
+                            , {
+                              "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/hls.h"
+                              , "line":"1080"
+                            }
+                          ]
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stream Write Operation (%L > %L > %L > %L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/img_filter_base_intel.h"
+                              , "line":"11"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2749"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"2215"
+                            }
+                            , {
+                              "filename":"./include/img_filter_core.h"
+                              , "line":"1952"
+                            }
+                            , {
+                              "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/hls.h"
+                              , "line":"1080"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Maximum concurrent iterations: Capacity of loop"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Use the %L viewer to estimate capacity"
+                          , "links":
+                          [
+                            {
+                              "view":"Fmax II Report"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Reference Manual : Loops in Components"
+                          , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                        }
+                      ]
+                    }
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":67
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":74
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":77
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":89
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":92
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":98
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":142
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":145
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":153
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":157
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":167
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":308
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":311
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":319
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":326
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":329
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":355
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":360
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                        , {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":367
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                        , {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":377
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":1478
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                        {
+                          "name":"Fully unrolled loop"
+                          , "data":
+                          ["n/a", "n/a", "n/a"]
+                          , "debug":
+                          [
+                            [
+                              {
+                                "filename":"./include/img_filter_core.h"
+                                , "line":1481
+                              }
+                            ]
+                          ]
+                          , "details":
+                          [
+                            {
+                              "type":"brief"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                            , {
+                              "type":"text"
+                              , "text":"Unrolled by #pragma unroll"
+                            }
+                          ]
+                          , "children":
+                          [
+                            {
+                              "name":"Fully unrolled loop"
+                              , "data":
+                              ["n/a", "n/a", "n/a"]
+                              , "debug":
+                              [
+                                [
+                                  {
+                                    "filename":"./include/img_filter_core.h"
+                                    , "line":680
+                                  }
+                                ]
+                              ]
+                              , "details":
+                              [
+                                {
+                                  "type":"brief"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                                , {
+                                  "type":"text"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                              ]
+                              , "children":
+                              [
+                                {
+                                  "name":"Fully unrolled loop"
+                                  , "data":
+                                  ["n/a", "n/a", "n/a"]
+                                  , "debug":
+                                  [
+                                    [
+                                      {
+                                        "filename":"./include/img_filter_core.h"
+                                        , "line":683
+                                      }
+                                    ]
+                                  ]
+                                  , "details":
+                                  [
+                                    {
+                                      "type":"brief"
+                                      , "text":"Unrolled by #pragma unroll"
+                                    }
+                                    , {
+                                      "type":"text"
+                                      , "text":"Unrolled by #pragma unroll"
+                                    }
+                                  ]
+                                  , "children":
+                                  [
+                                  ]
+                                }
+                              ]
+                            }
+                            , {
+                              "name":"Fully unrolled loop"
+                              , "data":
+                              ["n/a", "n/a", "n/a"]
+                              , "debug":
+                              [
+                                [
+                                  {
+                                    "filename":"./include/img_filter_core.h"
+                                    , "line":720
+                                  }
+                                ]
+                              ]
+                              , "details":
+                              [
+                                {
+                                  "type":"brief"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                                , {
+                                  "type":"text"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                              ]
+                              , "children":
+                              [
+                                {
+                                  "name":"Fully unrolled loop"
+                                  , "data":
+                                  ["n/a", "n/a", "n/a"]
+                                  , "debug":
+                                  [
+                                    [
+                                      {
+                                        "filename":"./include/img_filter_core.h"
+                                        , "line":723
+                                      }
+                                    ]
+                                  ]
+                                  , "details":
+                                  [
+                                    {
+                                      "type":"brief"
+                                      , "text":"Unrolled by #pragma unroll"
+                                    }
+                                    , {
+                                      "type":"text"
+                                      , "text":"Unrolled by #pragma unroll"
+                                    }
+                                  ]
+                                  , "children":
+                                  [
+                                  ]
+                                }
+                              ]
+                            }
+                            , {
+                              "name":"Fully unrolled loop"
+                              , "data":
+                              ["n/a", "n/a", "n/a"]
+                              , "debug":
+                              [
+                                [
+                                  {
+                                    "filename":"./include/img_filter_core.h"
+                                    , "line":1071
+                                  }
+                                ]
+                              ]
+                              , "details":
+                              [
+                                {
+                                  "type":"brief"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                                , {
+                                  "type":"text"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                              ]
+                              , "children":
+                              [
+                              ]
+                            }
+                            , {
+                              "name":"Fully unrolled loop"
+                              , "data":
+                              ["n/a", "n/a", "n/a"]
+                              , "debug":
+                              [
+                                [
+                                  {
+                                    "filename":"./include/img_filter_core.h"
+                                    , "line":1134
+                                  }
+                                ]
+                              ]
+                              , "details":
+                              [
+                                {
+                                  "type":"brief"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                                , {
+                                  "type":"text"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                              ]
+                              , "children":
+                              [
+                              ]
+                            }
+                            , {
+                              "name":"Fully unrolled loop"
+                              , "data":
+                              ["n/a", "n/a", "n/a"]
+                              , "debug":
+                              [
+                                [
+                                  {
+                                    "filename":"./include/img_filter_core.h"
+                                    , "line":1494
+                                  }
+                                ]
+                              ]
+                              , "details":
+                              [
+                                {
+                                  "type":"brief"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                                , {
+                                  "type":"text"
+                                  , "text":"Unrolled by #pragma unroll"
+                                }
+                              ]
+                              , "children":
+                              [
+                                {
+                                  "name":"Fully unrolled loop"
+                                  , "data":
+                                  ["n/a", "n/a", "n/a"]
+                                  , "debug":
+                                  [
+                                    [
+                                      {
+                                        "filename":"./include/img_filter_core.h"
+                                        , "line":1497
+                                      }
+                                    ]
+                                  ]
+                                  , "details":
+                                  [
+                                    {
+                                      "type":"brief"
+                                      , "text":"Unrolled by #pragma unroll"
+                                    }
+                                    , {
+                                      "type":"text"
+                                      , "text":"Unrolled by #pragma unroll"
+                                    }
+                                  ]
+                                  , "children":
+                                  [
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"./include/img_filter_core.h"
+                            , "line":1923
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Unrolled by #pragma unroll"
+                        }
+                      ]
+                      , "children":
+                      [
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: vxReadDram"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/link_OpenCLIntel.h"
+            , "line":20
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: None"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"vxReadDram.B1.start"
+          , "data":
+          ["Yes", ">=1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: 1 is the default for component invocation loop"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"vxReadDram.B2"
+              , "data":
+              ["Yes", ">=1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"./include/link_OpenCLIntel.h"
+                    , "line":26
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":" "
+                }
+                , {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: n/a"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual : Loops in Components"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"Fully unrolled loop"
+                  , "data":
+                  ["n/a", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/link_OpenCLIntel.h"
+                        , "line":29
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+                , {
+                  "name":"vxReadDram.B5"
+                  , "data":
+                  ["Yes", "~1", "4"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/link_OpenCLIntel.h"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":" "
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: enabled."
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"II is an approximation due to the following stallable instruction:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Stream Write Operation (%L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/link_OpenCLIntel.h"
+                              , "line":"39"
+                            }
+                            , {
+                              "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/hls.h"
+                              , "line":"1080"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Maximum concurrent iterations: Capacity of loop"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Use the %L viewer to estimate capacity"
+                          , "links":
+                          [
+                            {
+                              "view":"Fmax II Report"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Reference Manual : Loops in Components"
+                          , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                        }
+                      ]
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: vxWriteDram"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/link_OpenCLIntel.h"
+            , "line":68
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: vxWriteDram.B5"
+        }
+        , {
+          "type":"text"
+          , "text":"Use the %L report to view more details"
+          , "links":
+          [
+            {
+              "view":"Fmax II Report"
+            }
+          ]
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"vxWriteDram.B1.start"
+          , "data":
+          ["Yes", ">=1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: 1 is the default for component invocation loop"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"vxWriteDram.B2"
+              , "data":
+              ["Yes", ">=1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"./include/link_OpenCLIntel.h"
+                    , "line":71
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":" "
+                }
+                , {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: n/a"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual : Loops in Components"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"vxWriteDram.B5"
+                  , "data":
+                  ["Yes", "~1", "0"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/link_OpenCLIntel.h"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":" "
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"II is an approximation due to the following stallable instruction:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Stream Read Operation (%L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/link_OpenCLIntel.h"
+                              , "line":"74"
+                            }
+                            , {
+                              "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/hls.h"
+                              , "line":"1075"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Maximum concurrent iterations: Capacity of loop"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Use the %L viewer to estimate capacity"
+                          , "links":
+                          [
+                            {
+                              "view":"Fmax II Report"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Reference Manual : Loops in Components"
+                          , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                        }
+                      ]
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+                , {
+                  "name":"Fully unrolled loop"
+                  , "data":
+                  ["n/a", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/link_OpenCLIntel.h"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+                , {
+                  "name":"Fully unrolled loop"
+                  , "data":
+                  ["n/a", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/link_OpenCLIntel.h"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Task: vxWriteDram_1"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"./include/link_OpenCLIntel.h"
+            , "line":68
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Fmax bottlenck block: vxWriteDram_1.B5"
+        }
+        , {
+          "type":"text"
+          , "text":"Use the %L report to view more details"
+          , "links":
+          [
+            {
+              "view":"Fmax II Report"
+            }
+          ]
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Reference Manual : Component"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462820640727"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"vxWriteDram_1.B1.start"
+          , "data":
+          ["Yes", ">=1", "4"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Hyper-Optimized loop structure: enabled."
+            }
+            , {
+              "type":"text"
+              , "text":"Stallable instruction: n/a"
+            }
+            , {
+              "type":"text"
+              , "text":"Maximum concurrent iterations: 1 is the default for component invocation loop"
+            }
+            , {
+              "type":"text"
+              , "text":"See %L for more information"
+              , "links":
+              [
+                {
+                  "guide":"Reference Manual : Loops in Components"
+                  , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"vxWriteDram_1.B2"
+              , "data":
+              ["Yes", ">=1", "4"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"./include/link_OpenCLIntel.h"
+                    , "line":71
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":" "
+                }
+                , {
+                  "type":"text"
+                  , "text":"Hyper-Optimized loop structure: enabled."
+                }
+                , {
+                  "type":"text"
+                  , "text":"Stallable instruction: n/a"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Maximum concurrent iterations: Capacity of loop"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Use the %L viewer to estimate capacity"
+                      , "links":
+                      [
+                        {
+                          "view":"Fmax II Report"
+                        }
+                      ]
+                    }
+                  ]
+                }
+                , {
+                  "type":"text"
+                  , "text":"See %L for more information"
+                  , "links":
+                  [
+                    {
+                      "guide":"Reference Manual : Loops in Components"
+                      , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"vxWriteDram_1.B5"
+                  , "data":
+                  ["Yes", "~1", "0"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"./include/link_OpenCLIntel.h"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":" "
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Hyper-Optimized loop structure: disabled."
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"II is an approximation due to the following stallable instruction:"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Stream Read Operation (%L > %L)"
+                          , "links":
+                          [
+                            {
+                              "filename":"./include/link_OpenCLIntel.h"
+                              , "line":"74"
+                            }
+                            , {
+                              "filename":"/opt/intelFPGA_pro/19.4/hls/include/HLS/hls.h"
+                              , "line":"1075"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Maximum concurrent iterations: Capacity of loop"
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Use the %L viewer to estimate capacity"
+                          , "links":
+                          [
+                            {
+                              "view":"Fmax II Report"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Reference Manual : Loops in Components"
+                          , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/ewa1462824960255.html#ewa1462826976357"
+                        }
+                      ]
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

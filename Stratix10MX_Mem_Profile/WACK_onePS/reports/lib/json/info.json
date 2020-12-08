@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["test_WACK"],"name":"Project Name"},
+{"data":["Stratix 10, 1SM21BHU2F53E2VGS1, s10mx_ref:s10mx_hbm_es"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":[""],"name":"Quartus Version"},
+{"data":["aoc -rtl -DV=16 -DINPUTS=2 -board-package=/mnt/extra/Angelica/exm_binary/stratixMX/BSPMX/s10mx_ref test_WACK.cl"],"name":"Command"},
+{"data":["Thu Oct 29 17:58:57 2020"],"name":"Reports Generated At"}
+]}

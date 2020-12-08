@@ -1,0 +1,6 @@
+{"rows":[
+{"debug":[[{"filename":"/mnt/extra/Angelica/exm_binary/fft1d/device/fft1d_MX.cl"
+,"line":185}]]
+,"details":["/mnt/extra/Angelica/exm_binary/fft1d/device/fft1d_MX.cl:185:14: warning: unknown attribute 'task' ignored"]
+,"name":"unknown attribute 'task' ignored"}
+]}

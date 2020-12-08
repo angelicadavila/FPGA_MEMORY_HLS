@@ -1,0 +1,102 @@
+{
+  "basicblocks":
+  {
+    "streaming_iamax.B0":
+    {
+      "name":"streaming_iamax.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":36
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "streaming_iamax.B1":
+    {
+      "name":"streaming_iamax.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"432.0"
+      , "achieved_ii":1
+      , "latency":679
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"Yes"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Variable on loop carried feedback path"
+        }
+      ]
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"iamax.cl"
+                , "line":"30"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "streaming_iamax.B2":
+    {
+      "name":"streaming_iamax.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":45
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "streaming_iamax":
+    {
+      "debug":
+      [
+        {
+          "filename":"iamax.cl"
+          , "line":19
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "streaming_iamax__no_loop":
+        [
+          "streaming_iamax.B0"
+          , "streaming_iamax.B2"
+        ]
+        , "streaming_iamax.B1":
+        [
+          "streaming_iamax.B1"
+        ]
+      }
+    }
+  }
+}

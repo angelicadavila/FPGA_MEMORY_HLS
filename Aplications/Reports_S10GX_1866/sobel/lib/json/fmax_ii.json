@@ -1,0 +1,185 @@
+{
+  "basicblocks":
+  {
+    "ImgSobel.B0.runOnce":
+    {
+      "name":"ImgSobel.B0.runOnce"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":2
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "ImgSobel.B1.start":
+    {
+      "name":"ImgSobel.B1.start"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":18
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"Unknown location"
+                , "line":"0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobel.B2":
+    {
+      "name":"ImgSobel.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"1"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":11
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":"1430"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobel.B3":
+    {
+      "name":"ImgSobel.B3"
+      , "target_fmax":"Not specified"
+      , "target_ii":"1"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":2
+      , "loop_location":
+      {
+      }
+    }
+    , "ImgSobel.B4":
+    {
+      "name":"ImgSobel.B4"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":114
+      , "latency":137
+      , "max_interleaving":114
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":3
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"./img_filter_core.h"
+                , "line":"1431"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "ImgSobel.B5":
+    {
+      "name":"ImgSobel.B5"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":1
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "ImgSobel":
+    {
+      "debug":
+      [
+        {
+          "filename":"./img_filter_base.h"
+          , "line":197
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "ImgSobel__no_loop":
+        [
+          "ImgSobel.B0.runOnce"
+        ]
+        , "ImgSobel.B1.start":
+        [
+          "ImgSobel.B1.start"
+          , "ImgSobel.B2"
+          , "ImgSobel.B5"
+        ]
+        , "ImgSobel.B2":
+        [
+          "ImgSobel.B2"
+          , "ImgSobel.B4"
+          , "ImgSobel.B3"
+        ]
+        , "ImgSobel.B4":
+        [
+          "ImgSobel.B4"
+        ]
+      }
+    }
+  }
+}

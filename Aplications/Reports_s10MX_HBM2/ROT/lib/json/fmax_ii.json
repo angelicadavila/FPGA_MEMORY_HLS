@@ -1,0 +1,95 @@
+{
+  "basicblocks":
+  {
+    "streaming_rot.B0":
+    {
+      "name":"streaming_rot.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":36
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "streaming_rot.B1":
+    {
+      "name":"streaming_rot.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":654
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"rot_mx.cl"
+                , "line":"41"
+              }
+            ]
+          }
+        ]
+      }
+    }
+    , "streaming_rot.B2":
+    {
+      "name":"streaming_rot.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":0
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+  }
+  , "functions":
+  {
+    "streaming_rot":
+    {
+      "debug":
+      [
+        {
+          "filename":"rot_mx.cl"
+          , "line":29
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "streaming_rot__no_loop":
+        [
+          "streaming_rot.B0"
+          , "streaming_rot.B2"
+        ]
+        , "streaming_rot.B1":
+        [
+          "streaming_rot.B1"
+        ]
+      }
+    }
+  }
+}

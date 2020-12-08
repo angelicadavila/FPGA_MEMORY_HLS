@@ -1,0 +1,83 @@
+{
+  "nodes":
+  [
+    {
+      "name":"fetch"
+      , "id":3955467960
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"fetch.B0"
+          , "id":3955813184
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":3961357200
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 2"
+              , "id":3961855040
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":3961648816
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"fft1d"
+      , "id":3955667144
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"fft1d.B2"
+          , "id":3956026992
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 4"
+              , "id":3978204576
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 5"
+              , "id":3971800240
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"fft1d.B0"
+          , "id":3955782512
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 3"
+              , "id":3966677920
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"fft1d.B1"
+          , "id":3956023968
+          , "type":"bb"
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

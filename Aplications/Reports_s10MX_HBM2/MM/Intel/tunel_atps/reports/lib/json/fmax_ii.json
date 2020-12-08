@@ -1,0 +1,95 @@
+{
+  "basicblocks":
+  {
+    "matrixMult.B0":
+    {
+      "name":"matrixMult.B0"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":14
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "matrixMult.B1":
+    {
+      "name":"matrixMult.B1"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":24
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"No"
+      , "is_single_block_loop":"No"
+      , "loop_layer":0
+      , "loop_location":
+      {
+      }
+    }
+    , "matrixMult.B2":
+    {
+      "name":"matrixMult.B2"
+      , "target_fmax":"Not specified"
+      , "target_ii":"Not specified"
+      , "achieved_fmax":"480.0"
+      , "achieved_ii":1
+      , "latency":839
+      , "max_interleaving":1
+      , "is_fmax_bottleneck":"No"
+      , "is_loop_header":"Yes"
+      , "is_single_block_loop":"Yes"
+      , "loop_layer":1
+      , "loop_location":
+      {
+        "details":
+        [
+          {
+            "type":"text"
+            , "text":"Loop:  (%L)"
+            , "links":
+            [
+              {
+                "filename":"matrix_mult.cl"
+                , "line":"132"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  , "functions":
+  {
+    "matrixMult":
+    {
+      "debug":
+      [
+        {
+          "filename":"matrix_mult.cl"
+          , "line":104
+        }
+      ]
+      , "loop_hierachy":
+      {
+        "matrixMult__no_loop":
+        [
+          "matrixMult.B0"
+          , "matrixMult.B1"
+        ]
+        , "matrixMult.B2":
+        [
+          "matrixMult.B2"
+        ]
+      }
+    }
+  }
+}

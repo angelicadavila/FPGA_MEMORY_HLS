@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["test_bw10_deltaGX"],"name":"Project Name"},
+{"data":["Stratix 10, 1SG280LU3F50E1VGS1, s10_ref:s10gx"],"name":"Target Family, Device, Board"},
+{"data":["19.4.0 Build 64"],"name":"AOC Version"},
+{"data":[""],"name":"Quartus Version"},
+{"data":["aoc -rtl -v -D INPUTS=2 -D delta=3 test_bw10_deltaGX.cl"],"name":"Command"},
+{"data":["Fri Sep  4 09:47:32 2020"],"name":"Reports Generated At"}
+]}

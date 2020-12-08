@@ -1,0 +1,1971 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [15.7414, 9.47205, 7.05992, 4.51293, 14.596]
+  , "total":
+  [122924, 198446, 309, 578, 510]
+  , "name":"Kernel System"
+  , "max_resources":
+  [1405440, 2810880, 6847, 3960, 70272]
+  , "children":
+  [
+    {
+      "name":"Static Partition"
+      , "type":"partition"
+      , "children":
+      [
+        {
+          "name":"Board interface"
+          , "type":"resource"
+          , "data":
+          [13132, 20030, 112, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Platform interface logic."
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Global interconnect"
+      , "type":"resource"
+      , "data":
+      [4121, 5284, 0, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Global interconnect for 2 global loads and 1 global store. Reduce number of global loads and stores to simplify global interconnect."
+        }
+        , {
+          "type":"brief"
+          , "text":"For 2 global loads and 1 global store."
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Global Memory Interconnect"
+              , "link":"https://www.intel.com/content/www/us/en/programmable/documentation/mwh1391807516407.html#hnj1476724450050"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"System description ROM"
+      , "type":"resource"
+      , "data":
+      [2, 71, 2, 0, 0]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"This read-only memory contains information for the host about the system and about each kernel in the system, including kernel names, arguments, and attributes. The system description ROM ensures that the binary image on the FPGA is compatible with the host program."
+        }
+        , {
+          "type":"brief"
+          , "text":"Contains information for the host."
+        }
+      ]
+    }
+    , {
+      "name":"hotspot"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [13.7142, 8.24432, 6.15683, 2.84796, 14.596]
+      , "total_kernel_resources":
+      [105669, 173061, 195, 577.5, 510]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"text"
+          , "text":"Max global work dimension: 0"
+        }
+        , {
+          "type":"text"
+          , "text":"Kernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit.\nMax global work dimension: 0\nKernel attribute 'uses_global_work_offset' not specified. Add '__attribute__((uses_global_work_offset(0)))' to reduce area utilization if the kernel will always be enqueued with a 0 or NULL global_work_offset argument in clEnqueueNDRangeKernel. Add '__attribute__((uses_global_work_offset(1)))' to hide this suggestion without affecting kernel functionality."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Coalesced Private Variables: \n - 'in_sr' (hotspot_kernel_v5_MX.cl:26)\n - 'east' (hotspot_kernel_v5_MX.cl:62)"
+          , "type":"resource"
+          , "data":
+          [14, 256, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":26
+              }
+            ]
+            , [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":62
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (1 or fewer tap point)"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'in_sr' (hotspot_kernel_v5_MX.cl:26)\n - 'east' (hotspot_kernel_v5_MX.cl:62)\n - 'center' (hotspot_kernel_v5_MX.cl:62)"
+          , "type":"resource"
+          , "data":
+          [40, 52, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":26
+              }
+            ]
+            , [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":62
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (1 or fewer tap point)"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'in_sr' (hotspot_kernel_v5_MX.cl:26)\n - 'east' (hotspot_kernel_v5_MX.cl:62)\n - 'west' (hotspot_kernel_v5_MX.cl:62)\n - 'center' (hotspot_kernel_v5_MX.cl:62)"
+          , "type":"resource"
+          , "data":
+          [2480, 3224, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":26
+              }
+            ]
+            , [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":62
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (62 or fewer tap points)"
+            }
+            , {
+              "type":"text"
+              , "text":"62 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n62 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'in_sr' (hotspot_kernel_v5_MX.cl:26)\n - 'south' (hotspot_kernel_v5_MX.cl:62)"
+          , "type":"resource"
+          , "data":
+          [2534, 3532, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":26
+              }
+            ]
+            , [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":62
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Shift Register (64 or fewer tap points)"
+            }
+            , {
+              "type":"text"
+              , "text":"64 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Shift Register,\n64 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Coalesced Private Variables: \n - 'in_sr' (hotspot_kernel_v5_MX.cl:26)\n - 'south' (hotspot_kernel_v5_MX.cl:62)\n - 'east' (hotspot_kernel_v5_MX.cl:62)\n - 'west' (hotspot_kernel_v5_MX.cl:62)\n - 'center' (hotspot_kernel_v5_MX.cl:62)"
+          , "type":"resource"
+          , "data":
+          [8, 8, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":26
+              }
+            ]
+            , [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":62
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 4"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 4 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'bx' (hotspot_kernel_v5_MX.cl:38)"
+          , "type":"resource"
+          , "data":
+          [8, 64, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":38
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'in_sr' (hotspot_kernel_v5_MX.cl:26)"
+          , "type":"resource"
+          , "data":
+          [1312, 4096, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":26
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"64 registers of width 32"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n64 regs, 32 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'index' (hotspot_kernel_v5_MX.cl:39)"
+          , "type":"resource"
+          , "data":
+          [8, 66, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":39
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 33"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 33 width"
+            }
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'x' (hotspot_kernel_v5_MX.cl:36)"
+          , "type":"resource"
+          , "data":
+          [12, 18, 0, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"hotspot_kernel_v5_MX.cl"
+                , "line":36
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 9"
+            }
+            , {
+              "type":"brief"
+              , "text":"Register,\n1 reg, 9 width"
+            }
+          ]
+        }
+        , {
+          "name":"hotspot.B0"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [0, 99, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [0, 65, 0, 0, 0]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:41"
+                  , "type":"resource"
+                  , "data":
+                  [0, 34, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":41
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [10, 9, 1, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"hotspot_kernel_v5_MX.cl:41"
+                  , "type":"resource"
+                  , "data":
+                  [76, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":41
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"hotspot.B1"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [4311, 53980, 11, 0, 392]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [4311, 53980, 11, 0, 392]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5175, 265, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2705.83, 74.6667, 0, 0, 0]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:142"
+                  , "type":"resource"
+                  , "data":
+                  [8, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":142
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:146"
+                  , "type":"resource"
+                  , "data":
+                  [4, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":146
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:149"
+                  , "type":"resource"
+                  , "data":
+                  [8, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":149
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:26"
+                  , "type":"resource"
+                  , "data":
+                  [2295.17, 53.3333, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":26
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:36"
+                  , "type":"resource"
+                  , "data":
+                  [8, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":36
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:37"
+                  , "type":"resource"
+                  , "data":
+                  [44, 96, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":37
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:38"
+                  , "type":"resource"
+                  , "data":
+                  [8, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:41"
+                  , "type":"resource"
+                  , "data":
+                  [16, 9, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":41
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:71"
+                  , "type":"resource"
+                  , "data":
+                  [78, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1582, 2874, 73, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [135, 31, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [64, 8, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":66
+                      , "data":
+                      [66, 18, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":66
+                      , "data":
+                      [5, 5, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [735.833, 554.667, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":77
+                      , "data":
+                      [715, 554.667, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [7.33333, 0, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:26"
+                  , "type":"resource"
+                  , "data":
+                  [641.667, 522.666, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":26
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [624.5, 522.666, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [13.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [3.66667, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:37"
+                  , "type":"resource"
+                  , "data":
+                  [192.5, 67.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":37
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [11, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [21, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [36, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [26, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 32-bit x unsigned 1-bit to 33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"unsigned 32-bit x unsigned 32-bit to 33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 33, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:38"
+                  , "type":"resource"
+                  , "data":
+                  [8.66667, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":38
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [8.66667, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:41"
+                  , "type":"resource"
+                  , "data":
+                  [68, 33, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":41
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":65
+                      , "data":
+                      [33, 32, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":66
+                      , "data":
+                      [1, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"33-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:55"
+                  , "type":"resource"
+                  , "data":
+                  [64, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":55
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:56"
+                  , "type":"resource"
+                  , "data":
+                  [2016, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":56
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":63
+                      , "data":
+                      [2016, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:57"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":57
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:58"
+                  , "type":"resource"
+                  , "data":
+                  [87, 46, 0, 1.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":58
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [55, 46, 0, 1.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:59"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":59
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:60"
+                  , "type":"resource"
+                  , "data":
+                  [32, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":60
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:66"
+                  , "type":"resource"
+                  , "data":
+                  [4576, 161, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":66
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":128
+                      , "data":
+                      [96, 33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":128
+                      , "data":
+                      [4480, 128, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:69"
+                  , "type":"resource"
+                  , "data":
+                  [43.5, 32.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":69
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":65
+                      , "data":
+                      [32.25, 32, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [11, 0.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:71"
+                  , "type":"resource"
+                  , "data":
+                  [8199.49, 6840.66, 55, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":71
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [624.5, 522.666, 0, 0, 0]
+                    }
+                    , {
+                      "name":"4-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [7574, 6318, 55, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:75"
+                  , "type":"resource"
+                  , "data":
+                  [35, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":75
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [35, 1, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:77"
+                  , "type":"resource"
+                  , "data":
+                  [7574, 6318, 55, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [7574, 6318, 55, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Load uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:84"
+                  , "type":"resource"
+                  , "data":
+                  [2752, 2112, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":84
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [704, 64, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [2048, 2048, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:94"
+                  , "type":"resource"
+                  , "data":
+                  [2784, 2112, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":94
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [704, 64, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [2048, 2048, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:104"
+                  , "type":"resource"
+                  , "data":
+                  [2048, 2048, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":104
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [2048, 2048, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:114"
+                  , "type":"resource"
+                  , "data":
+                  [2059, 2049, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":114
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [2048, 2048, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:123"
+                  , "type":"resource"
+                  , "data":
+                  [3072, 6144, 0, 64, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":123
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:124"
+                  , "type":"resource"
+                  , "data":
+                  [19520, 22815, 0, 192, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":124
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [64, 31, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":192
+                      , "data":
+                      [192, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit And"
+                      , "type":"resource"
+                      , "count":192
+                      , "data":
+                      [2048, 2048, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [576, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":320
+                      , "data":
+                      [5376, 256, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Or"
+                      , "type":"resource"
+                      , "count":128
+                      , "data":
+                      [2048, 2048, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Hardened Dot Product of Size 2"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:125"
+                  , "type":"resource"
+                  , "data":
+                  [10240, 20480, 0, 192, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":125
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Multiply-Add"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [4096, 8192, 0, 64, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Add"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                    , {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:126"
+                  , "type":"resource"
+                  , "data":
+                  [3072, 6144, 0, 64, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":126
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-point Sub"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [3072, 6144, 0, 64, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:128"
+                  , "type":"resource"
+                  , "data":
+                  [4096, 8192, 0, 64, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":128
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Hardened Floating-Point Multiply-Add"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [4096, 8192, 0, 64, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:132"
+                  , "type":"resource"
+                  , "data":
+                  [2368, 65, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":132
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":128
+                      , "data":
+                      [128, 1, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [2240, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:134"
+                  , "type":"resource"
+                  , "data":
+                  [11499, 17747, 0, 0, 118]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":134
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [32, 32, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Store"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11467, 17715, 0, 0, 118]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Burst-coalesced non-aligned LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Store uses a Burst-coalesced non-aligned LSU.  Use Dynamic Profiler to determine performance impact of this LSU."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:142"
+                  , "type":"resource"
+                  , "data":
+                  [11.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":142
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [9, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 0.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:144"
+                  , "type":"resource"
+                  , "data":
+                  [2.5, 1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":144
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.25, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"1-bit Xor"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [0.5, 0.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1.5, 0.5, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:146"
+                  , "type":"resource"
+                  , "data":
+                  [93.6667, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":146
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [64, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [29.6667, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"hotspot_kernel_v5_MX.cl:149"
+                  , "type":"resource"
+                  , "data":
+                  [8.66667, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"hotspot_kernel_v5_MX.cl"
+                        , "line":149
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [8.66667, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

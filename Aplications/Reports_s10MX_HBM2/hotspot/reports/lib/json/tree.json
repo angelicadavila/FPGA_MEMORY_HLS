@@ -1,0 +1,52 @@
+{
+  "nodes":
+  [
+    {
+      "name":"hotspot"
+      , "id":1712037144
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"hotspot.B0"
+          , "id":1712250704
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":1741755568
+              , "type":"cluster"
+            }
+          ]
+        }
+        , {
+          "name":"hotspot.B2"
+          , "id":1712250368
+          , "type":"bb"
+        }
+        , {
+          "name":"hotspot.B1"
+          , "id":1712250288
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 2"
+              , "id":1741941936
+              , "type":"cluster"
+            }
+            , {
+              "name":"Cluster 1"
+              , "id":1741925328
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

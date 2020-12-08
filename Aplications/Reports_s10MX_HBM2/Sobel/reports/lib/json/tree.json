@@ -1,0 +1,29 @@
+{
+  "nodes":
+  [
+    {
+      "name":"exm1"
+      , "id":2681727576
+      , "type":"kernel"
+      , "children":
+      [
+        {
+          "name":"exm1.B0"
+          , "id":2681915360
+          , "type":"bb"
+          , "children":
+          [
+            {
+              "name":"Cluster 0"
+              , "id":2682756768
+              , "type":"cluster"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}
